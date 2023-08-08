@@ -44,24 +44,22 @@ agg_df$Subject <- as.factor(agg_df$Subject)
 agg_df[order(agg_df$ReactionTime),]
 agg_df[order(agg_df$Accuracy),]
 
-fwrite(df, "GP6SPR.csv")
 
 # merge with assoc and cloze pretest values
-pretests <- fread("../Norming/GradedP6_pretests.csv")
-df <- merge(df, pretests[,c("Item", "Condition", "Verb", "Target", "Distractor", "Last_Mentioned", "Cloze", "Cloze_distractor", "Cloze_C_alternative", "Plaus", "Plaus_distractor")], by=c("Item", "Condition"))
+pretests <- fread("GradedP6_FollowUpStudy_Pretests.csv")
+df <- merge(df, pretests[,c("Item", "Condition", "Verb", "Target", "Distractor", "Last_Mentioned", "Cloze", "Cloze_distractor", "Cloze_C_alternative", "Plaus_target", "Plaus_distractor", "Surprisal_target", "Surprisal_distractor")], by=c("Item", "Condition"))
 
 # add precritRT as predictor
 df$precritRT <- rep(df[Region=="Pre-critical",]$ReadingTime, each=5)
-
 fwrite(df, "GP6SPR.csv")
 # fwrite(df, "lmerSPR/data/GP6SPR.csv")
-
+#############################################################################################################################################
 # # Verb length per cond
-# df$ncharverb <- nchar(df$Verb)
-# aggregate(ncharverb ~ Condition, df, mean)
+ df$ncharverb <- nchar(df$Verb)
+ aggregate(ncharverb ~ Condition, df, mean)
 
 # ########## READ PROCESSED DATA
-# setwd("/Users/chr/Nextcloud/Exp4/SPR/")
+# setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results_Analysis/")
 # df_bal <- fread("Exp4_SPR.csv")
 # df_bal$Subject <- as.factor(df_bal$Subject)
 
