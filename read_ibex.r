@@ -30,8 +30,10 @@ table(survey$handedness)
 
 # Get REACTION TIMES & READING TIMES
 rc <- get_reacts("task.txt")
+pr <- get_plausibility_rating("task.txt")
 rd <- get_reads("reading.txt")
 df <- merge(rd, rc[,c("ReactionTime", "Accuracy", "IPhash", "Item")], by=c("IPhash", "Item"), all=TRUE)
+df <- merge(df, pr[,c("IPhash", "Item", "Condition", "PlausibilityRating")], by=c("IPhash", "Item", "Condition"), all=TRUE)
 
 # Change IPhashes to subject numbers
 colnames(df)[1] <- "Subject"

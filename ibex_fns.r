@@ -7,14 +7,6 @@ get_reacts <- function(
     # read in react.txt and compute RTs from it
     dt <- fread(reac_path, fill = TRUE)
     
-    plausibility_rating_not_filtered <- dt[(V8 %in% c("Controller-AcceptabilityJudgment")),]
-    plausibility_rating <- plausibility_rating_not_filtered[(V11 %in% c(1,2,3,4,5,6,7)),]
-    
-    colnames(plausibility_rating) <- c("timeReceipt", "IPhash", "Controller", "IbexItemNum", "IbexElementNum", "Block", "Group", 
-                                       "PennElType", "PennElName", "Header", "PlausibilityRating", "EventTime", "Item", "CondCode", 
-                                       "List", "Critical", "CorrectKey", "QuestionText", "QuestionCondition", "Comments",
-                                       "RatingTime", "Comments2")
-    
     dt <-  dt[!(V8 %in% c("Controller-AcceptabilityJudgment")),]
     dt <-  dt[V10 %in% c("Print", "PressedKey"),]
     
@@ -33,12 +25,12 @@ get_reacts <- function(
     # Drop first row of each trials
     dt <- dt[Accuracy %in% c(0,1),]
     # Drop fillers 
-    dt <- dt[!(CondCode>250),] 
-
+    dt <- dt[!(CondCode>250),]
+    
     # Map Condition and Block values
     dt$Condition <- ifelse(dt$CondCode == 151, "A", ifelse(dt$CondCode == 152, "B", ifelse(dt$CondCode == 153, "C", "UNKNOWN")))
     dt$Block <- as.integer(ifelse(dt$Block == "block1", 1, ifelse(dt$Block == "block2", 2, ifelse(dt$Block == "block3", 3, "UNKNOWN"))))
-
+    
     # Drop unnneeded columns
     dt <- dt[,c("timeReceipt", "IPhash", "Controller", "Block", "PressedKey", "CorrectKey", "Item", "Condition", "List", "Critical", "QuestionText", "QuestionCondition", "ReactionTime", "Accuracy",  "New1", "New2")]  
     
@@ -166,4 +158,24 @@ exclude <- function(
     print(paste("Excluded ", round(percent_excluded,2), "% of data based on per-subject SD."))
 
     df
+}
+
+get_plausibility_rating <- function(
+    reac_path
+){
+    dt <- fread(reac_path, fill = TRUE)
+    
+    plausibility_rating_not_filtered <- dt[(V8 %in% c("Controller-AcceptabilityJudgment")),]
+    plausibility_rating <- plausibility_rating_not_filtered[(V11 %in% c(1,2,3,4,5,6,7)),]
+    
+    colnames(plausibility_rating) <- c("timeReceipt", "IPhash", "Controller", "IbexItemNum", "IbexElementNum", "Block", "Group", 
+                                       "PennElType", "PennElName", "Header", "PlausibilityRating", "EventTime", "Item", "CondCode", 
+                                       "List", "Critical", "CorrectKey", "QuestionText", "QuestionCondition", "Comments",
+                                       "RatingTime", "Comments2")
+    
+    plausibility_rating <- plausibility_rating[!(CondCode>250),]
+    
+    plausibility_rating$Condition <- ifelse(plausibility_rating$CondCode == 151, "A", ifelse(plausibility_rating$CondCode == 152, "B", ifelse(plausibility_rating$CondCode == 153, "C", "UNKNOWN")))
+    
+    plausibility_rating
 }
