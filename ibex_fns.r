@@ -204,14 +204,9 @@ calculate_avg_plausibility_rating <- function(
       
       avg_plausrating_per_item <- round(mean(as.numeric(plausibility_rating_per_item$SPRPlausRating)), 2)
       
-      IDs <- plausibility_rating_per_item$IPhash
+      cond <- plausibility_rating$Condition == condition & plausibility_rating$Item == item
       
-      for (id in IDs)
-      {
-        cond <- plausibility_rating$Condition == condition & plausibility_rating$Item == item & plausibility_rating$IPhash == id
-      
-        plausibility_rating$avg_plausrating_per_item[cond] <- avg_plausrating_per_item
-      }
+      plausibility_rating$avg_plausrating_per_item[cond] <- avg_plausrating_per_item
     }
     
     print(paste("Average plausibility rating for condition ", condition, " : ", avg_plausrating_per_condition))
