@@ -1,4 +1,4 @@
-Condition,Item,Sentence,Verb,Target,Distractor,Last_Mentioned,Cloze,Cloze_distractor,Cloze_C_alternative,Cloze_round,Plaus_target,Plaus_distractor,Cloze_C_alternative_Francesca,Surprisal_target,Surprisal_distractor
+Condition,Item,Sentence,Verb,Target,Distractor,Last_Mentioned,Cloze,Cloze_distractor,Cloze_C_alternative,Cloze_round,Plausstudy_t_avg,Plausstudy_d_avg,Cloze_C_alternative_Francesca,Surprisal_target,Surprisal_distractor
 A,1,Dann verabschiedete die Dame,verabschiedete,Touristen,Koffer,target,0.6,0,,2,5.8,3.1,,2.503722429,1.063010693
 B,1,Dann begrüßte die Dame,begrüßte,Touristen,Koffer,target,NA,NA,,,4.5,3.4,,1.769414067,5.617175102
 C,1,Dann unterschrieb die Dame,unterschrieb,Touristen,Koffer,target,0,0,0.1333333333,,1.8,4.3,0.133333333,9.249886513,2.278341293

@@ -169,7 +169,7 @@ get_plausibility_rating <- function(
     plausibility_rating <- plausibility_rating_not_filtered[(V11 %in% c(1,2,3,4,5,6,7)),]
     
     colnames(plausibility_rating) <- c("timeReceipt", "IPhash", "Controller", "IbexItemNum", "IbexElementNum", "Block", "Group", 
-                                       "PennElType", "PennElName", "Header", "PlausibilityRating", "EventTime", "Item", "CondCode", 
+                                       "PennElType", "PennElName", "Header", "SPRPlausRating", "EventTime", "Item", "CondCode", 
                                        "List", "Critical", "CorrectKey", "QuestionText", "QuestionCondition", "Comments",
                                        "RatingTime", "Comments2")
     
@@ -177,5 +177,46 @@ get_plausibility_rating <- function(
     
     plausibility_rating$Condition <- ifelse(plausibility_rating$CondCode == 151, "A", ifelse(plausibility_rating$CondCode == 152, "B", ifelse(plausibility_rating$CondCode == 153, "C", "UNKNOWN")))
     
+    plausibility_rating_with_avg <- calculate_avg_plausibility_rating(plausibility_rating)
+    
+    plausibility_rating <- merge(plausibility_rating, plausibility_rating_with_avg[,c("IPhash", "Item", "Condition", "avg_plausrating_per_item")], by=c("IPhash", "Item", "Condition"), all=TRUE)
+    
     plausibility_rating
 }
+
+calculate_avg_plausibility_rating <- function(
+    plausibility_rating
+) 
+{
+  conditions <- c("A", "B", "C") 
+  items <- c(numbers = seq(1, 60))
+  
+  plausibility_rating$avg_plausrating_per_item <- 0
+  
+  for (condition in conditions) 
+  {
+    plausibility_rating_per_condition <- plausibility_rating[(Condition %in% c(condition)),]
+    avg_plausrating_per_condition <- round(mean(as.numeric(plausibility_rating_per_condition$SPRPlausRating)), 2)
+    
+    for (item in items) 
+    {
+      plausibility_rating_per_item <-plausibility_rating_per_condition[(Item %in% c(item)),]
+      
+      avg_plausrating_per_item <- round(mean(as.numeric(plausibility_rating_per_item$SPRPlausRating)), 2)
+      
+      IDs <- plausibility_rating_per_item$IPhash
+      
+      for (id in IDs)
+      {
+        cond <- plausibility_rating$Condition == condition & plausibility_rating$Item == item & plausibility_rating$IPhash == id
+      
+        plausibility_rating$avg_plausrating_per_item[cond] <- avg_plausrating_per_item
+      }
+    }
+    
+    print(paste("Average plausibility rating for condition ", condition, " : ", avg_plausrating_per_condition))
+  }
+  
+  plausibility_rating
+}
+

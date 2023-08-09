@@ -33,7 +33,7 @@ rc <- get_reacts("task.txt")
 pr <- get_plausibility_rating("task.txt")
 rd <- get_reads("reading.txt")
 df <- merge(rd, rc[,c("ReactionTime", "Accuracy", "IPhash", "Item")], by=c("IPhash", "Item"), all=TRUE)
-df <- merge(df, pr[,c("IPhash", "Item", "Condition", "PlausibilityRating")], by=c("IPhash", "Item", "Condition"), all=TRUE)
+df <- merge(df, pr[,c("IPhash", "Item", "Condition", "SPRPlausRating", "avg_plausrating_per_item")], by=c("IPhash", "Item", "Condition"), all=TRUE)
 
 # Change IPhashes to subject numbers
 colnames(df)[1] <- "Subject"
@@ -49,16 +49,17 @@ agg_df[order(agg_df$Accuracy),]
 
 # merge with assoc and cloze pretest values
 pretests <- fread("GradedP6_FollowUpStudy_Pretests.csv")
-df <- merge(df, pretests[,c("Item", "Condition", "Verb", "Target", "Distractor", "Last_Mentioned", "Cloze", "Cloze_distractor", "Cloze_C_alternative", "Plaus_target", "Plaus_distractor", "Surprisal_target", "Surprisal_distractor")], by=c("Item", "Condition"))
+df <- merge(df, pretests[,c("Item", "Condition", "Verb", "Target", "Distractor", "Last_Mentioned", "Cloze", "Cloze_distractor", "Cloze_C_alternative", "Plausstudy_t_avg", "Plausstudy_d_avg", "Surprisal_target", "Surprisal_distractor")], by=c("Item", "Condition"))
 
 # add precritRT as predictor
 df$precritRT <- rep(df[Region=="Pre-critical",]$ReadingTime, each=5)
 fwrite(df, "GP6SPR.csv")
-# fwrite(df, "lmerSPR/data/GP6SPR.csv")
 #############################################################################################################################################
-# # Verb length per cond
- df$ncharverb <- nchar(df$Verb)
- aggregate(ncharverb ~ Condition, df, mean)
+
+#fwrite(df, "lmerSPR/data/GP6SPR.csv")
+# Verb length per cond
+# df$ncharverb <- nchar(df$Verb)
+# aggregate(ncharverb ~ Condition, df, mean)
 
 # ########## READ PROCESSED DATA
 # setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results_Analysis/")
