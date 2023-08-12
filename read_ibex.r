@@ -6,6 +6,7 @@
 library(ggplot2)
 library(data.table)
 library(gridExtra)
+library(dplyr)
 
 setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results_Analysis/")
 source("ibex_fns.r")
@@ -33,7 +34,7 @@ rc <- get_reacts("task.txt")
 pr <- get_plausibility_rating("task.txt")
 rd <- get_reads("reading.txt")
 df <- merge(rd, rc[,c("ReactionTime", "Accuracy", "IPhash", "Item")], by=c("IPhash", "Item"), all=TRUE)
-df <- merge(df, pr[,c("IPhash", "Item", "Condition", "SPRPlausRating", "avg_plausrating_per_item")], by=c("IPhash", "Item", "Condition"), all=TRUE)
+df <- merge(df, pr[,c("IPhash", "Item", "Condition", "SPR_Plaus_Rating", "SPR_Plaus_avg")], by=c("IPhash", "Item", "Condition"), all=TRUE)
 
 # Change IPhashes to subject numbers
 colnames(df)[1] <- "Subject"
@@ -49,13 +50,41 @@ agg_df[order(agg_df$Accuracy),]
 
 # merge with assoc and cloze pretest values
 pretests <- fread("GradedP6_FollowUpStudy_Pretests.csv")
-df <- merge(df, pretests[,c("Item", "Condition", "Verb", "Target", "Distractor", "Last_Mentioned", "Cloze", "Cloze_distractor", "Cloze_C_alternative", "Plausstudy_t_avg", "Plausstudy_d_avg", "Surprisal_target", "Surprisal_distractor")], by=c("Item", "Condition"))
+df <- merge(df, pretests[,c("Item", "Condition", "Verb", "Target", "Distractor", "Last_Mentioned", "Cloze", "Cloze_distractor", "Cloze_C_alternative", "Plaus_target_avg", "Plaus_dist_avg", "Surprisal_target", "Surprisal_distractor")], by=c("Item", "Condition"))
 
 # add precritRT as predictor
 df$precritRT <- rep(df[Region=="Pre-critical",]$ReadingTime, each=5)
-fwrite(df, "GP6SPR.csv")
-#############################################################################################################################################
+#change column order
+df <- df %>% relocate(precritRT, .before= ReadingTime)
 
+fwrite(df, "GP6SPR.csv")
+
+
+#############################################################################################################################################
+# Plaus Data Viz for avg Plausratings from SPR Study
+library(ggplot2)
+
+setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results_Analysis/")
+dt <- fread("GP6SPR.csv")
+
+means <- aggregate(SPR_Plaus_avg ~ Condition, dt, FUN=mean)
+means$Plaus_SE <- aggregate(SPR_Plaus_avg ~ Condition, dt, FUN=se)$SPR_Plaus_avg
+dt_items_abc <- dt[, lapply(.SD, mean), by=list(Item, Condition), .SDcols=c("SPR_Plaus_avg")]
+
+# density plot
+p <- ggplot(dt_items_abc, aes(x=SPR_Plaus_avg, color=Condition, fill=Condition)) + geom_density(alpha=0.4) + theme_minimal() + xlim(1,7) + ylim(0, 1.5)
+p <- p + geom_vline(data=means, aes(xintercept=SPR_Plaus_avg, color=Condition), linetype="dashed") + scale_x_continuous(breaks=seq(1,7))
+p <- p + scale_color_manual(labels=c("A", "B", "C"), values=c("black", "red", "blue"))
+p <- p + scale_fill_manual(labels=c("A", "B", "C"), values=c("black", "red", "blue"))
+p <- p + labs(title = "Target Plausibility (SPR)", y="Density", x="Plausibility" )
+ggsave("DensityPlot_Plausibility_Target_SPR.pdf", p, device=cairo_pdf, width=4, height=4)
+p
+
+# barplot
+q <- ggplot(means, aes(x=Condition, y=SPR_Plaus_avg)) + geom_bar(stat="identity") + labs(title = "Average Plausibility Ratings per Condition (SPR)", y = "Plausibility",  x = "Condition") + geom_errorbar(aes(ymin=SPR_Plaus_avg-Plaus_SE, ymax=SPR_Plaus_avg+Plaus_SE), width=.4, position=position_dodge(.9)) + theme_minimal() + coord_cartesian(ylim = c(1, 7)) + scale_y_continuous(breaks = c(1:7))
+ggsave("BarPlot_Plausibility_Target_SPR.pdf", q, device=cairo_pdf, width=4, height=4)
+q
+#############################################################################################################################################
 #fwrite(df, "lmerSPR/data/GP6SPR.csv")
 # Verb length per cond
 # df$ncharverb <- nchar(df$Verb)
