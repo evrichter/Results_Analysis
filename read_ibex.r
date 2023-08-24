@@ -11,11 +11,19 @@ library(dplyr)
 setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results_Analysis/")
 source("ibex_fns.r")
 
+excluded_participants <- c("ffdd30f484d223ac5999ce51deb40e33",
+                           "6b1c3b3f4a456ceb42f68dedb8f5b931")
+
 #### DATA FORMATTING
 # Get DEMOG CONSENT SURVEY data
 cn <- get_consent("consent.txt")
 dm <- get_demog("demog.txt")
 sv <- get_survey("survey.txt")
+
+cn <- cn[!(IPhash %in% excluded_participants),]
+dm <- dm[!(IPhash %in% excluded_participants),] 
+sv <- sv[!(IPhash %in% excluded_participants),] 
+
 survey <- merge(dm, sv, by=c("IPhash"), all=TRUE)
 survey$Age <- as.numeric(survey$Age)
 
@@ -33,6 +41,11 @@ table(survey$handedness)
 rc <- get_reacts("task.txt")
 pr <- get_plausibility_rating("task.txt")
 rd <- get_reads("reading.txt")
+
+rc <- rc[!(IPhash %in% excluded_participants),]
+pr <- pr[!(IPhash %in% excluded_participants),] 
+rd <- rd[!(IPhash %in% excluded_participants),] 
+
 df <- merge(rd, rc[,c("ReactionTime", "Accuracy", "IPhash", "Item")], by=c("IPhash", "Item"), all=TRUE)
 df <- merge(df, pr[,c("IPhash", "Item", "Condition", "SPR_Plaus_Rating", "SPR_Plaus_avg")], by=c("IPhash", "Item", "Condition"), all=TRUE)
 
@@ -76,13 +89,13 @@ p <- ggplot(dt_items_abc, aes(x=SPR_Plaus_avg, color=Condition, fill=Condition))
 p <- p + geom_vline(data=means, aes(xintercept=SPR_Plaus_avg, color=Condition), linetype="dashed") + scale_x_continuous(breaks=seq(1,7))
 p <- p + scale_color_manual(labels=c("A", "B", "C"), values=c("black", "red", "blue"))
 p <- p + scale_fill_manual(labels=c("A", "B", "C"), values=c("black", "red", "blue"))
-p <- p + labs(title = "Target Plausibility (SPR)", y="Density", x="Plausibility" )
-ggsave("DensityPlot_Plausibility_Target_SPR.pdf", p, device=cairo_pdf, width=4, height=4)
+p <- p + labs(title = "Plausibility (SPR)", y="Density", x="Plausibility" )
+ggsave("DensityPlot_Plausibility_SPR.pdf", p, device=cairo_pdf, width=4, height=4)
 p
 
 # barplot
 q <- ggplot(means, aes(x=Condition, y=SPR_Plaus_avg)) + geom_bar(stat="identity") + labs(title = "Average Plausibility Ratings per Condition (SPR)", y = "Plausibility",  x = "Condition") + geom_errorbar(aes(ymin=SPR_Plaus_avg-Plaus_SE, ymax=SPR_Plaus_avg+Plaus_SE), width=.4, position=position_dodge(.9)) + theme_minimal() + coord_cartesian(ylim = c(1, 7)) + scale_y_continuous(breaks = c(1:7))
-ggsave("BarPlot_Plausibility_Target_SPR.pdf", q, device=cairo_pdf, width=4, height=4)
+ggsave("BarPlot_Plausibility_SPR.pdf", q, device=cairo_pdf, width=4, height=4)
 q
 #############################################################################################################################################
 #fwrite(df, "lmerSPR/data/GP6SPR.csv")
