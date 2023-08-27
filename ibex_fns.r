@@ -1,4 +1,4 @@
-setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results_Analysis/")
+setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results/")
 
 #### FUNCTIONS
 get_reacts <- function(
@@ -157,6 +157,41 @@ exclude <- function(
     percent_excluded <- ((n - nrow(df)) / nrow(df) * 100)
     print(paste("Excluded ", round(percent_excluded,2), "% of data based on per-subject SD."))
 
+    df
+}
+
+remove_outliers <- function(
+    df
+)
+{
+    n <- nrow(df)
+  
+    reading_time_outliers <- df[ReadingTime < 50 | ReadingTime > 2500]
+    reaction_time_outliers <- df[ReactionTime < 50 | ReactionTime > 10000]
+    
+    for(i in 1:nrow(reading_time_outliers)) {
+      trial_row <- reading_time_outliers[i, ]
+      
+      trial_item <- trial_row$Item
+      trial_condition <- trial_row$Condition
+      trial_subject <- trial_row$Subject
+      
+      df <- df[!(Item == trial_item & Condition == trial_condition & Subject == trial_subject)]
+    }
+    
+    for(i in 1:nrow(reaction_time_outliers)) {
+      trial_row <- reaction_time_outliers[i, ]
+      
+      trial_item <- trial_row$Item
+      trial_condition <- trial_row$Condition
+      trial_subject <- trial_row$Subject
+      
+      df <- df[!(Item == trial_item & Condition == trial_condition & Subject == trial_subject)]
+    }
+    
+    percent_excluded <- ((n - nrow(df)) / nrow(df) * 100)
+    print(paste("Excluded" , round(percent_excluded,2), "% of data based on reading times and reaction times."))
+    
     df
 }
 

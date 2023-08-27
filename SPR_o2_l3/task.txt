@@ -5080,3 +5080,729 @@
 1692877309,d2432cd1e68ff96f8e651f4ee1562aa2,PennController,119,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692877274499,24,151,1,6,,,,Any addtional parameters were appended as additional columns
 1692877309,d2432cd1e68ff96f8e651f4ee1562aa2,PennController,119,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,6,1692877274499,24,151,1,6,,,,NULL,1415,Any addtional parameters were appended as additional columns
 1692877309,d2432cd1e68ff96f8e651f4ee1562aa2,PennController,119,0,block3,NULL,PennController,120,_Trial_,End,1692877274501,24,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,13,0,block1,NULL,PennController,16,_Header_,End,1692957806090,145,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,13,0,block1,NULL,PennController,16,_Header_,Start,1692957806090,145,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,13,0,block1,NULL,PennController,16,_Trial_,Start,1692957806090,145,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,13,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,2,1692957828024,145,257,1,6,,,,NULL,1323,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,13,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692957828024,145,257,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,13,0,block1,NULL,PennController,16,_Trial_,End,1692957828028,145,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,14,0,block1,NULL,PennController,17,_Header_,End,1692957828029,114,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,14,0,block1,NULL,PennController,17,_Header_,Start,1692957828029,114,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,14,0,block1,NULL,PennController,17,_Trial_,Start,1692957828029,114,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,14,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,6,1692957845199,114,255,1,6,,,,NULL,1420,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,14,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692957845199,114,255,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,14,0,block1,NULL,PennController,17,_Trial_,End,1692957845203,114,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,15,0,block1,NULL,PennController,18,_Header_,End,1692957845205,25,152,1,6,D,Hat die Geschätfrau den Mann korrigiert?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,15,0,block1,NULL,PennController,18,_Header_,Start,1692957845205,25,152,1,6,D,Hat die Geschätfrau den Mann korrigiert?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,15,0,block1,NULL,PennController,18,_Trial_,Start,1692957845205,25,152,1,6,D,Hat die Geschätfrau den Mann korrigiert?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,15,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,5,1692957865958,25,152,1,6,D,Hat die Geschätfrau den Mann korrigiert?,manipulation,NULL,1307,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,15,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692957865958,25,152,1,6,D,Hat die Geschätfrau den Mann korrigiert?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,15,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692957865962,25,152,1,6,D,Hat die Geschätfrau den Mann korrigiert?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,15,0,block1,NULL,Key,ComprehensionDecide,PressedKey,D,1692957867550,25,152,1,6,D,Hat die Geschätfrau den Mann korrigiert?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,15,0,block1,NULL,PennController,18,_Trial_,End,1692957867555,25,152,1,6,D,Hat die Geschätfrau den Mann korrigiert?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,16,0,block1,NULL,PennController,19,_Header_,Start,1692957867557,43,151,1,6,D,Hat die Oma das Kaninchen gekitzelt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,16,0,block1,NULL,PennController,19,_Trial_,Start,1692957867557,43,151,1,6,D,Hat die Oma das Kaninchen gekitzelt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,16,0,block1,NULL,PennController,19,_Header_,End,1692957867558,43,151,1,6,D,Hat die Oma das Kaninchen gekitzelt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,16,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,6,1692957883659,43,151,1,6,D,Hat die Oma das Kaninchen gekitzelt?,manipulation,NULL,1757,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,16,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692957883659,43,151,1,6,D,Hat die Oma das Kaninchen gekitzelt?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,16,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692957883662,43,151,1,6,D,Hat die Oma das Kaninchen gekitzelt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,16,0,block1,NULL,Key,ComprehensionDecide,PressedKey,D,1692957885381,43,151,1,6,D,Hat die Oma das Kaninchen gekitzelt?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,16,0,block1,NULL,PennController,19,_Trial_,End,1692957885385,43,151,1,6,D,Hat die Oma das Kaninchen gekitzelt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,17,0,block1,NULL,PennController,20,_Header_,End,1692957885387,40,153,1,8,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,17,0,block1,NULL,PennController,20,_Header_,Start,1692957885387,40,153,1,8,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,17,0,block1,NULL,PennController,20,_Trial_,Start,1692957885387,40,153,1,8,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,17,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,2,1692957900285,40,153,1,8,,,,NULL,994,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,17,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692957900285,40,153,1,8,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,17,0,block1,NULL,PennController,20,_Trial_,End,1692957900289,40,153,1,8,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,18,0,block1,NULL,PennController,21,_Header_,End,1692957900291,12,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,18,0,block1,NULL,PennController,21,_Header_,Start,1692957900291,12,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,18,0,block1,NULL,PennController,21,_Trial_,Start,1692957900291,12,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,18,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,5,1692957914040,12,152,1,6,,,,NULL,1334,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,18,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692957914040,12,152,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,18,0,block1,NULL,PennController,21,_Trial_,End,1692957914044,12,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,19,0,block1,NULL,PennController,22,_Header_,End,1692957914046,144,257,1,8,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,19,0,block1,NULL,PennController,22,_Header_,Start,1692957914046,144,257,1,8,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,19,0,block1,NULL,PennController,22,_Trial_,Start,1692957914046,144,257,1,8,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,19,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,2,1692957932334,144,257,1,8,,,,NULL,1110,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,19,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692957932334,144,257,1,8,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,19,0,block1,NULL,PennController,22,_Trial_,End,1692957932337,144,257,1,8,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,20,0,block1,NULL,PennController,23,_Header_,Start,1692957932339,23,152,1,6,K,Konnte der Junge sich für einen Apfel entscheiden?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,20,0,block1,NULL,PennController,23,_Trial_,Start,1692957932339,23,152,1,6,K,Konnte der Junge sich für einen Apfel entscheiden?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,20,0,block1,NULL,PennController,23,_Header_,End,1692957932340,23,152,1,6,K,Konnte der Junge sich für einen Apfel entscheiden?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,20,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,4,1692957948530,23,152,1,6,K,Konnte der Junge sich für einen Apfel entscheiden?,continuation,NULL,4145,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,20,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692957948530,23,152,1,6,K,Konnte der Junge sich für einen Apfel entscheiden?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,20,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692957948534,23,152,1,6,K,Konnte der Junge sich für einen Apfel entscheiden?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,20,0,block1,NULL,Key,ComprehensionDecide,PressedKey,K,1692957950469,23,152,1,6,K,Konnte der Junge sich für einen Apfel entscheiden?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,20,0,block1,NULL,PennController,23,_Trial_,End,1692957950473,23,152,1,6,K,Konnte der Junge sich für einen Apfel entscheiden?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,21,0,block1,NULL,PennController,24,_Header_,End,1692957950475,20,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,21,0,block1,NULL,PennController,24,_Header_,Start,1692957950475,20,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,21,0,block1,NULL,PennController,24,_Trial_,Start,1692957950475,20,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,21,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,2,1692957965283,20,153,1,6,,,,NULL,1038,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,21,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692957965283,20,153,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,21,0,block1,NULL,PennController,24,_Trial_,End,1692957965286,20,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,22,0,block1,NULL,PennController,25,_Header_,End,1692957965288,55,153,1,6,D,War das Thema der Ausstellung Malerei?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,22,0,block1,NULL,PennController,25,_Header_,Start,1692957965288,55,153,1,6,D,War das Thema der Ausstellung Malerei?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,22,0,block1,NULL,PennController,25,_Trial_,Start,1692957965288,55,153,1,6,D,War das Thema der Ausstellung Malerei?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,22,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,2,1692957981182,55,153,1,6,D,War das Thema der Ausstellung Malerei?,paragraph,NULL,874,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,22,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692957981182,55,153,1,6,D,War das Thema der Ausstellung Malerei?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,22,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692957981185,55,153,1,6,D,War das Thema der Ausstellung Malerei?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,22,0,block1,NULL,Key,ComprehensionDecide,PressedKey,D,1692957983682,55,153,1,6,D,War das Thema der Ausstellung Malerei?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,22,0,block1,NULL,PennController,25,_Trial_,End,1692957983686,55,153,1,6,D,War das Thema der Ausstellung Malerei?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,23,0,block1,NULL,PennController,26,_Header_,Start,1692957983687,126,256,1,6,K,Ist der Historiker in die Bibliothek gegangen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,23,0,block1,NULL,PennController,26,_Trial_,Start,1692957983687,126,256,1,6,K,Ist der Historiker in die Bibliothek gegangen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,23,0,block1,NULL,PennController,26,_Header_,End,1692957983688,126,256,1,6,K,Ist der Historiker in die Bibliothek gegangen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,23,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,5,1692957996327,126,256,1,6,K,Ist der Historiker in die Bibliothek gegangen?,paragraph,NULL,989,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,23,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692957996327,126,256,1,6,K,Ist der Historiker in die Bibliothek gegangen?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,23,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692957996329,126,256,1,6,K,Ist der Historiker in die Bibliothek gegangen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,23,0,block1,NULL,Key,ComprehensionDecide,PressedKey,K,1692957998525,126,256,1,6,K,Ist der Historiker in die Bibliothek gegangen?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,23,0,block1,NULL,PennController,26,_Trial_,End,1692957998530,126,256,1,6,K,Ist der Historiker in die Bibliothek gegangen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,24,0,block1,NULL,PennController,27,_Header_,End,1692957998532,54,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,24,0,block1,NULL,PennController,27,_Header_,Start,1692957998532,54,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,24,0,block1,NULL,PennController,27,_Trial_,Start,1692957998532,54,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,24,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,3,1692958014740,54,152,1,6,,,,NULL,1214,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,24,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958014740,54,152,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,24,0,block1,NULL,PennController,27,_Trial_,End,1692958014744,54,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,25,0,block1,NULL,PennController,28,_Header_,End,1692958014745,113,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,25,0,block1,NULL,PennController,28,_Header_,Start,1692958014745,113,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,25,0,block1,NULL,PennController,28,_Trial_,Start,1692958014745,113,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,25,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,6,1692958027571,113,255,1,6,,,,NULL,940,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,25,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958027571,113,255,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,25,0,block1,NULL,PennController,28,_Trial_,End,1692958027574,113,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,26,0,block1,NULL,PennController,29,_Header_,End,1692958027576,128,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,26,0,block1,NULL,PennController,29,_Header_,Start,1692958027576,128,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,26,0,block1,NULL,PennController,29,_Trial_,Start,1692958027576,128,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,26,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,5,1692958042897,128,256,1,6,,,,NULL,1108,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,26,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958042897,128,256,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,26,0,block1,NULL,PennController,29,_Trial_,End,1692958042899,128,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,27,0,block1,NULL,PennController,30,_Header_,End,1692958042901,127,256,1,6,D,Hat die Schaffnerin den Fahrplan zerrissen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,27,0,block1,NULL,PennController,30,_Header_,Start,1692958042901,127,256,1,6,D,Hat die Schaffnerin den Fahrplan zerrissen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,27,0,block1,NULL,PennController,30,_Trial_,Start,1692958042901,127,256,1,6,D,Hat die Schaffnerin den Fahrplan zerrissen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,27,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,5,1692958059528,127,256,1,6,D,Hat die Schaffnerin den Fahrplan zerrissen?,manipulation,NULL,1319,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,27,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958059528,127,256,1,6,D,Hat die Schaffnerin den Fahrplan zerrissen?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,27,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692958059531,127,256,1,6,D,Hat die Schaffnerin den Fahrplan zerrissen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,27,0,block1,NULL,Key,ComprehensionDecide,PressedKey,D,1692958061019,127,256,1,6,D,Hat die Schaffnerin den Fahrplan zerrissen?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,27,0,block1,NULL,PennController,30,_Trial_,End,1692958061023,127,256,1,6,D,Hat die Schaffnerin den Fahrplan zerrissen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,28,0,block1,NULL,PennController,31,_Header_,End,1692958061024,22,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,28,0,block1,NULL,PennController,31,_Header_,Start,1692958061024,22,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,28,0,block1,NULL,PennController,31,_Trial_,Start,1692958061024,22,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,28,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,2,1692958074778,22,153,1,6,,,,NULL,1024,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,28,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958074778,22,153,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,28,0,block1,NULL,PennController,31,_Trial_,End,1692958074782,22,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,29,0,block1,NULL,PennController,32,_Header_,Start,1692958074783,111,255,1,6,K,Hat der Regisseur den Filmstar besänftigt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,29,0,block1,NULL,PennController,32,_Trial_,Start,1692958074783,111,255,1,6,K,Hat der Regisseur den Filmstar besänftigt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,29,0,block1,NULL,PennController,32,_Header_,End,1692958074784,111,255,1,6,K,Hat der Regisseur den Filmstar besänftigt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,29,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,5,1692958086626,111,255,1,6,K,Hat der Regisseur den Filmstar besänftigt?,manipulation,NULL,976,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,29,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958086626,111,255,1,6,K,Hat der Regisseur den Filmstar besänftigt?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,29,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692958086628,111,255,1,6,K,Hat der Regisseur den Filmstar besänftigt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,29,0,block1,NULL,Key,ComprehensionDecide,PressedKey,K,1692958088386,111,255,1,6,K,Hat der Regisseur den Filmstar besänftigt?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,29,0,block1,NULL,PennController,32,_Trial_,End,1692958088389,111,255,1,6,K,Hat der Regisseur den Filmstar besänftigt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,30,0,block1,NULL,PennController,33,_Header_,End,1692958088391,2,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,30,0,block1,NULL,PennController,33,_Header_,Start,1692958088391,2,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,30,0,block1,NULL,PennController,33,_Trial_,Start,1692958088391,2,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,30,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,5,1692958107157,2,151,1,6,,,,NULL,1120,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,30,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958107157,2,151,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,30,0,block1,NULL,PennController,33,_Trial_,End,1692958107162,2,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,31,0,block1,NULL,PennController,34,_Header_,End,1692958107164,16,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,31,0,block1,NULL,PennController,34,_Header_,Start,1692958107164,16,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,31,0,block1,NULL,PennController,34,_Trial_,Start,1692958107164,16,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,31,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,5,1692958120807,16,151,1,6,,,,NULL,1059,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,31,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958120807,16,151,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,31,0,block1,NULL,PennController,34,_Trial_,End,1692958120811,16,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,32,0,block1,NULL,PennController,35,_Header_,Start,1692958120812,14,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,32,0,block1,NULL,PennController,35,_Trial_,Start,1692958120812,14,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,32,0,block1,NULL,PennController,35,_Header_,End,1692958120813,14,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,32,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,5,1692958135902,14,152,1,6,,,,NULL,1602,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,32,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958135902,14,152,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,32,0,block1,NULL,PennController,35,_Trial_,End,1692958135905,14,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,33,0,block1,NULL,PennController,36,_Header_,End,1692958135907,141,257,1,6,K,Hat die Lehrerin dem Erstklässler zum Geburtstag gratuliert?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,33,0,block1,NULL,PennController,36,_Header_,Start,1692958135907,141,257,1,6,K,Hat die Lehrerin dem Erstklässler zum Geburtstag gratuliert?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,33,0,block1,NULL,PennController,36,_Trial_,Start,1692958135907,141,257,1,6,K,Hat die Lehrerin dem Erstklässler zum Geburtstag gratuliert?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,33,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,4,1692958151225,141,257,1,6,K,Hat die Lehrerin dem Erstklässler zum Geburtstag gratuliert?,continuation,NULL,897,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,33,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958151225,141,257,1,6,K,Hat die Lehrerin dem Erstklässler zum Geburtstag gratuliert?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,33,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692958151227,141,257,1,6,K,Hat die Lehrerin dem Erstklässler zum Geburtstag gratuliert?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,33,0,block1,NULL,Key,ComprehensionDecide,PressedKey,K,1692958153015,141,257,1,6,K,Hat die Lehrerin dem Erstklässler zum Geburtstag gratuliert?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,33,0,block1,NULL,PennController,36,_Trial_,End,1692958153021,141,257,1,6,K,Hat die Lehrerin dem Erstklässler zum Geburtstag gratuliert?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,34,0,block1,NULL,PennController,37,_Header_,End,1692958153023,142,257,1,6,D,Ist das Mädchen in einen Anhänger geradelt?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,34,0,block1,NULL,PennController,37,_Header_,Start,1692958153023,142,257,1,6,D,Ist das Mädchen in einen Anhänger geradelt?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,34,0,block1,NULL,PennController,37,_Trial_,Start,1692958153023,142,257,1,6,D,Ist das Mädchen in einen Anhänger geradelt?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,34,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,2,1692958166105,142,257,1,6,D,Ist das Mädchen in einen Anhänger geradelt?,paragraph,NULL,946,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,34,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958166105,142,257,1,6,D,Ist das Mädchen in einen Anhänger geradelt?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,34,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692958166107,142,257,1,6,D,Ist das Mädchen in einen Anhänger geradelt?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,34,0,block1,NULL,Key,ComprehensionDecide,PressedKey,D,1692958167807,142,257,1,6,D,Ist das Mädchen in einen Anhänger geradelt?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,34,0,block1,NULL,PennController,37,_Trial_,End,1692958167811,142,257,1,6,D,Ist das Mädchen in einen Anhänger geradelt?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,35,0,block1,NULL,PennController,38,_Header_,End,1692958167814,130,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,35,0,block1,NULL,PennController,38,_Header_,Start,1692958167814,130,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,35,0,block1,NULL,PennController,38,_Trial_,Start,1692958167814,130,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,35,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,5,1692958180086,130,256,1,6,,,,NULL,947,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,35,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958180086,130,256,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,35,0,block1,NULL,PennController,38,_Trial_,End,1692958180090,130,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,36,0,block1,NULL,PennController,39,_Header_,Start,1692958180092,41,151,1,7,D,Hat die Trainerin den Pokal in den Schrank gestellt?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,36,0,block1,NULL,PennController,39,_Trial_,Start,1692958180092,41,151,1,7,D,Hat die Trainerin den Pokal in den Schrank gestellt?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,36,0,block1,NULL,PennController,39,_Header_,End,1692958180093,41,151,1,7,D,Hat die Trainerin den Pokal in den Schrank gestellt?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,36,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,5,1692958195994,41,151,1,7,D,Hat die Trainerin den Pokal in den Schrank gestellt?,continuation,NULL,1169,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,36,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958195994,41,151,1,7,D,Hat die Trainerin den Pokal in den Schrank gestellt?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,36,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692958195996,41,151,1,7,D,Hat die Trainerin den Pokal in den Schrank gestellt?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,36,0,block1,NULL,Key,ComprehensionDecide,PressedKey,D,1692958197252,41,151,1,7,D,Hat die Trainerin den Pokal in den Schrank gestellt?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,36,0,block1,NULL,PennController,39,_Trial_,End,1692958197256,41,151,1,7,D,Hat die Trainerin den Pokal in den Schrank gestellt?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,37,0,block1,NULL,PennController,40,_Header_,End,1692958197258,115,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,37,0,block1,NULL,PennController,40,_Header_,Start,1692958197258,115,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,37,0,block1,NULL,PennController,40,_Trial_,Start,1692958197258,115,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,37,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,5,1692958210202,115,255,1,6,,,,NULL,1880,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,37,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958210202,115,255,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,37,0,block1,NULL,PennController,40,_Trial_,End,1692958210205,115,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,38,0,block1,NULL,PennController,41,_Header_,Start,1692958210206,15,151,1,6,K,War die Sekretärin erleichtert über die Diktiermaschine?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,38,0,block1,NULL,PennController,41,_Trial_,Start,1692958210206,15,151,1,6,K,War die Sekretärin erleichtert über die Diktiermaschine?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,38,0,block1,NULL,PennController,41,_Header_,End,1692958210207,15,151,1,6,K,War die Sekretärin erleichtert über die Diktiermaschine?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,38,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,4,1692958223718,15,151,1,6,K,War die Sekretärin erleichtert über die Diktiermaschine?,paragraph,NULL,1467,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,38,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958223718,15,151,1,6,K,War die Sekretärin erleichtert über die Diktiermaschine?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,38,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692958223721,15,151,1,6,K,War die Sekretärin erleichtert über die Diktiermaschine?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,38,0,block1,NULL,Key,ComprehensionDecide,PressedKey,K,1692958225590,15,151,1,6,K,War die Sekretärin erleichtert über die Diktiermaschine?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,38,0,block1,NULL,PennController,41,_Trial_,End,1692958225593,15,151,1,6,K,War die Sekretärin erleichtert über die Diktiermaschine?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,39,0,block1,NULL,PennController,42,_Header_,End,1692958225595,27,153,1,9,D,Hat der Lehrer die Tasche aufgegeben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,39,0,block1,NULL,PennController,42,_Header_,Start,1692958225595,27,153,1,9,D,Hat der Lehrer die Tasche aufgegeben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,39,0,block1,NULL,PennController,42,_Trial_,Start,1692958225595,27,153,1,9,D,Hat der Lehrer die Tasche aufgegeben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,39,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,1,1692958239562,27,153,1,9,D,Hat der Lehrer die Tasche aufgegeben?,continuation,NULL,1153,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,39,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958239562,27,153,1,9,D,Hat der Lehrer die Tasche aufgegeben?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,39,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692958239565,27,153,1,9,D,Hat der Lehrer die Tasche aufgegeben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,39,0,block1,NULL,Key,ComprehensionDecide,PressedKey,D,1692958240764,27,153,1,9,D,Hat der Lehrer die Tasche aufgegeben?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,39,0,block1,NULL,PennController,42,_Trial_,End,1692958240767,27,153,1,9,D,Hat der Lehrer die Tasche aufgegeben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,40,0,block1,NULL,PennController,43,_Header_,End,1692958240769,143,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,40,0,block1,NULL,PennController,43,_Header_,Start,1692958240769,143,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,40,0,block1,NULL,PennController,43,_Trial_,Start,1692958240769,143,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,40,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,1,1692958257221,143,257,1,6,,,,NULL,966,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,40,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958257221,143,257,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,40,0,block1,NULL,PennController,43,_Trial_,End,1692958257226,143,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,41,0,block1,NULL,PennController,44,_Trial_,Start,1692958257227,8,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,41,0,block1,NULL,PennController,44,_Header_,End,1692958257228,8,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,41,0,block1,NULL,PennController,44,_Header_,Start,1692958257228,8,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,41,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,6,1692958269969,8,151,1,6,,,,NULL,1481,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,41,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958269969,8,151,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,41,0,block1,NULL,PennController,44,_Trial_,End,1692958269973,8,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,42,0,block1,NULL,PennController,45,_Header_,End,1692958269975,112,255,1,7,D,Hat der Manager die Musikerin aufgefordert%2C weiter zu arbeiten?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,42,0,block1,NULL,PennController,45,_Header_,Start,1692958269975,112,255,1,7,D,Hat der Manager die Musikerin aufgefordert%2C weiter zu arbeiten?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,42,0,block1,NULL,PennController,45,_Trial_,Start,1692958269975,112,255,1,7,D,Hat der Manager die Musikerin aufgefordert%2C weiter zu arbeiten?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,42,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,2,1692958282775,112,255,1,7,D,Hat der Manager die Musikerin aufgefordert%2C weiter zu arbeiten?,continuation,NULL,1894,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,42,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958282775,112,255,1,7,D,Hat der Manager die Musikerin aufgefordert%2C weiter zu arbeiten?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,42,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692958282778,112,255,1,7,D,Hat der Manager die Musikerin aufgefordert%2C weiter zu arbeiten?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,42,0,block1,NULL,Key,ComprehensionDecide,PressedKey,D,1692958284165,112,255,1,7,D,Hat der Manager die Musikerin aufgefordert%2C weiter zu arbeiten?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,42,0,block1,NULL,PennController,45,_Trial_,End,1692958284168,112,255,1,7,D,Hat der Manager die Musikerin aufgefordert%2C weiter zu arbeiten?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,43,0,block1,NULL,PennController,46,_Header_,End,1692958284170,17,153,1,6,K,Hat die Tochter den Rasenmäher halbiert?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,43,0,block1,NULL,PennController,46,_Header_,Start,1692958284170,17,153,1,6,K,Hat die Tochter den Rasenmäher halbiert?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,43,0,block1,NULL,PennController,46,_Trial_,Start,1692958284170,17,153,1,6,K,Hat die Tochter den Rasenmäher halbiert?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,43,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,2,1692958296380,17,153,1,6,K,Hat die Tochter den Rasenmäher halbiert?,manipulation,NULL,1009,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,43,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958296380,17,153,1,6,K,Hat die Tochter den Rasenmäher halbiert?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,43,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692958296382,17,153,1,6,K,Hat die Tochter den Rasenmäher halbiert?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,43,0,block1,NULL,Key,ComprehensionDecide,PressedKey,K,1692958298080,17,153,1,6,K,Hat die Tochter den Rasenmäher halbiert?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,43,0,block1,NULL,PennController,46,_Trial_,End,1692958298084,17,153,1,6,K,Hat die Tochter den Rasenmäher halbiert?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,44,0,block1,NULL,PennController,47,_Header_,End,1692958298086,21,153,1,6,K,Hat die Freundin den Segler verschraubt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,44,0,block1,NULL,PennController,47,_Header_,Start,1692958298086,21,153,1,6,K,Hat die Freundin den Segler verschraubt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,44,0,block1,NULL,PennController,47,_Trial_,Start,1692958298086,21,153,1,6,K,Hat die Freundin den Segler verschraubt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,44,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,2,1692958312681,21,153,1,6,K,Hat die Freundin den Segler verschraubt?,manipulation,NULL,1285,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,44,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958312681,21,153,1,6,K,Hat die Freundin den Segler verschraubt?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,44,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692958312683,21,153,1,6,K,Hat die Freundin den Segler verschraubt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,44,0,block1,NULL,Key,ComprehensionDecide,PressedKey,K,1692958314630,21,153,1,6,K,Hat die Freundin den Segler verschraubt?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,44,0,block1,NULL,PennController,47,_Trial_,End,1692958314633,21,153,1,6,K,Hat die Freundin den Segler verschraubt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,45,0,block1,NULL,PennController,48,_Header_,End,1692958314635,6,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,45,0,block1,NULL,PennController,48,_Header_,Start,1692958314635,6,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,45,0,block1,NULL,PennController,48,_Trial_,Start,1692958314635,6,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,45,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,2,1692958325097,6,152,1,6,,,,NULL,1138,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,45,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958325097,6,152,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,45,0,block1,NULL,PennController,48,_Trial_,End,1692958325100,6,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,46,0,block1,NULL,PennController,49,_Header_,End,1692958325101,129,256,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,46,0,block1,NULL,PennController,49,_Header_,Start,1692958325101,129,256,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,46,0,block1,NULL,PennController,49,_Trial_,Start,1692958325101,129,256,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,46,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,4,1692958339283,129,256,1,7,,,,NULL,956,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,46,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958339283,129,256,1,7,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,46,0,block1,NULL,PennController,49,_Trial_,End,1692958339286,129,256,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,47,0,block1,NULL,PennController,50,_Header_,End,1692958339288,19,152,1,6,K,Hat der Mechaniker den Schraubenzieher hinter dem Ohr der Nichte hervorgezogen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,47,0,block1,NULL,PennController,50,_Header_,Start,1692958339288,19,152,1,6,K,Hat der Mechaniker den Schraubenzieher hinter dem Ohr der Nichte hervorgezogen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,47,0,block1,NULL,PennController,50,_Trial_,Start,1692958339288,19,152,1,6,K,Hat der Mechaniker den Schraubenzieher hinter dem Ohr der Nichte hervorgezogen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,47,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,NULL,6,1692958354116,19,152,1,6,K,Hat der Mechaniker den Schraubenzieher hinter dem Ohr der Nichte hervorgezogen?,paragraph,NULL,1387,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,47,0,block1,NULL,Controller-AcceptabilityJudgment,block1_accept,,NULL,1692958354116,19,152,1,6,K,Hat der Mechaniker den Schraubenzieher hinter dem Ohr der Nichte hervorgezogen?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,47,0,block1,NULL,Canvas,ComprehensionQuestion,Print,NA,1692958354118,19,152,1,6,K,Hat der Mechaniker den Schraubenzieher hinter dem Ohr der Nichte hervorgezogen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,47,0,block1,NULL,Key,ComprehensionDecide,PressedKey,K,1692958356096,19,152,1,6,K,Hat der Mechaniker den Schraubenzieher hinter dem Ohr der Nichte hervorgezogen?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,47,0,block1,NULL,PennController,50,_Trial_,End,1692958356100,19,152,1,6,K,Hat der Mechaniker den Schraubenzieher hinter dem Ohr der Nichte hervorgezogen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,49,0,block2,NULL,PennController,51,_Header_,End,1692959040082,107,255,1,6,D,Hat der Maler den Farbeimer umgeworfen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,49,0,block2,NULL,PennController,51,_Header_,Start,1692959040082,107,255,1,6,D,Hat der Maler den Farbeimer umgeworfen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,49,0,block2,NULL,PennController,51,_Trial_,Start,1692959040082,107,255,1,6,D,Hat der Maler den Farbeimer umgeworfen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,49,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,5,1692959054583,107,255,1,6,D,Hat der Maler den Farbeimer umgeworfen?,paragraph,NULL,1359,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,49,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959054583,107,255,1,6,D,Hat der Maler den Farbeimer umgeworfen?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,49,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959054585,107,255,1,6,D,Hat der Maler den Farbeimer umgeworfen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,49,0,block2,NULL,Key,ComprehensionDecide,PressedKey,D,1692959056436,107,255,1,6,D,Hat der Maler den Farbeimer umgeworfen?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,49,0,block2,NULL,PennController,51,_Trial_,End,1692959056439,107,255,1,6,D,Hat der Maler den Farbeimer umgeworfen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,50,0,block2,NULL,PennController,52,_Header_,End,1692959056441,121,256,1,6,K,Hat die Studentin ihren Mitbewohner gerufen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,50,0,block2,NULL,PennController,52,_Header_,Start,1692959056441,121,256,1,6,K,Hat die Studentin ihren Mitbewohner gerufen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,50,0,block2,NULL,PennController,52,_Trial_,Start,1692959056441,121,256,1,6,K,Hat die Studentin ihren Mitbewohner gerufen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,50,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,6,1692959069591,121,256,1,6,K,Hat die Studentin ihren Mitbewohner gerufen?,manipulation,NULL,1189,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,50,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959069591,121,256,1,6,K,Hat die Studentin ihren Mitbewohner gerufen?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,50,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959069593,121,256,1,6,K,Hat die Studentin ihren Mitbewohner gerufen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,50,0,block2,NULL,Key,ComprehensionDecide,PressedKey,K,1692959071445,121,256,1,6,K,Hat die Studentin ihren Mitbewohner gerufen?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,50,0,block2,NULL,PennController,52,_Trial_,End,1692959071448,121,256,1,6,K,Hat die Studentin ihren Mitbewohner gerufen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,51,0,block2,NULL,PennController,53,_Header_,Start,1692959071449,45,152,1,6,D,Hat der Referendar beim Gewinnspiel verloren?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,51,0,block2,NULL,PennController,53,_Trial_,Start,1692959071449,45,152,1,6,D,Hat der Referendar beim Gewinnspiel verloren?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,51,0,block2,NULL,PennController,53,_Header_,End,1692959071450,45,152,1,6,D,Hat der Referendar beim Gewinnspiel verloren?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,51,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,4,1692959084496,45,152,1,6,D,Hat der Referendar beim Gewinnspiel verloren?,continuation,NULL,1424,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,51,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959084496,45,152,1,6,D,Hat der Referendar beim Gewinnspiel verloren?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,51,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959084499,45,152,1,6,D,Hat der Referendar beim Gewinnspiel verloren?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,51,0,block2,NULL,Key,ComprehensionDecide,PressedKey,D,1692959086006,45,152,1,6,D,Hat der Referendar beim Gewinnspiel verloren?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,51,0,block2,NULL,PennController,53,_Trial_,End,1692959086009,45,152,1,6,D,Hat der Referendar beim Gewinnspiel verloren?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,52,0,block2,NULL,PennController,54,_Header_,End,1692959086011,50,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,52,0,block2,NULL,PennController,54,_Header_,Start,1692959086011,50,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,52,0,block2,NULL,PennController,54,_Trial_,Start,1692959086011,50,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,52,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,4,1692959101144,50,151,1,6,,,,NULL,1176,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,52,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959101144,50,151,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,52,0,block2,NULL,PennController,54,_Trial_,End,1692959101148,50,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,53,0,block2,NULL,PennController,55,_Header_,End,1692959101149,123,256,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,53,0,block2,NULL,PennController,55,_Header_,Start,1692959101149,123,256,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,53,0,block2,NULL,PennController,55,_Trial_,Start,1692959101149,123,256,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,53,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,3,1692959125092,123,256,1,7,,,,NULL,1265,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,53,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959125092,123,256,1,7,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,53,0,block2,NULL,PennController,55,_Trial_,End,1692959125096,123,256,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,54,0,block2,NULL,PennController,56,_Header_,End,1692959125097,29,151,1,6,K,Hat sich die Praktikantin für das Fernglas bedankt?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,54,0,block2,NULL,PennController,56,_Header_,Start,1692959125097,29,151,1,6,K,Hat sich die Praktikantin für das Fernglas bedankt?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,54,0,block2,NULL,PennController,56,_Trial_,Start,1692959125097,29,151,1,6,K,Hat sich die Praktikantin für das Fernglas bedankt?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,54,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,2,1692959141312,29,151,1,6,K,Hat sich die Praktikantin für das Fernglas bedankt?,continuation,NULL,1448,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,54,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959141312,29,151,1,6,K,Hat sich die Praktikantin für das Fernglas bedankt?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,54,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959141315,29,151,1,6,K,Hat sich die Praktikantin für das Fernglas bedankt?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,54,0,block2,NULL,Key,ComprehensionDecide,PressedKey,K,1692959142872,29,151,1,6,K,Hat sich die Praktikantin für das Fernglas bedankt?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,54,0,block2,NULL,PennController,56,_Trial_,End,1692959142876,29,151,1,6,K,Hat sich die Praktikantin für das Fernglas bedankt?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,55,0,block2,NULL,PennController,57,_Header_,End,1692959142878,58,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,55,0,block2,NULL,PennController,57,_Header_,Start,1692959142878,58,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,55,0,block2,NULL,PennController,57,_Trial_,Start,1692959142878,58,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,55,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,2,1692959157264,58,153,1,6,,,,NULL,1321,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,55,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959157264,58,153,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,55,0,block2,NULL,PennController,57,_Trial_,End,1692959157267,58,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,56,0,block2,NULL,PennController,58,_Header_,End,1692959157268,137,257,1,7,D,Hat die Aufseherin den Populisten bestochen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,56,0,block2,NULL,PennController,58,_Header_,Start,1692959157268,137,257,1,7,D,Hat die Aufseherin den Populisten bestochen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,56,0,block2,NULL,PennController,58,_Trial_,Start,1692959157268,137,257,1,7,D,Hat die Aufseherin den Populisten bestochen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,56,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,2,1692959172753,137,257,1,7,D,Hat die Aufseherin den Populisten bestochen?,manipulation,NULL,1059,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,56,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959172753,137,257,1,7,D,Hat die Aufseherin den Populisten bestochen?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,56,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959172756,137,257,1,7,D,Hat die Aufseherin den Populisten bestochen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,56,0,block2,NULL,Key,ComprehensionDecide,PressedKey,D,1692959175720,137,257,1,7,D,Hat die Aufseherin den Populisten bestochen?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,56,0,block2,NULL,PennController,58,_Trial_,End,1692959175724,137,257,1,7,D,Hat die Aufseherin den Populisten bestochen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,57,0,block2,NULL,PennController,59,_Header_,End,1692959175725,109,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,57,0,block2,NULL,PennController,59,_Header_,Start,1692959175725,109,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,57,0,block2,NULL,PennController,59,_Trial_,Start,1692959175725,109,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,57,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,5,1692959188169,109,255,1,6,,,,NULL,1340,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,57,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959188169,109,255,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,57,0,block2,NULL,PennController,59,_Trial_,End,1692959188172,109,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,58,0,block2,NULL,PennController,60,_Header_,End,1692959188173,28,152,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,58,0,block2,NULL,PennController,60,_Header_,Start,1692959188173,28,152,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,58,0,block2,NULL,PennController,60,_Trial_,Start,1692959188173,28,152,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,58,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,4,1692959203164,28,152,1,7,,,,NULL,1765,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,58,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959203164,28,152,1,7,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,58,0,block2,NULL,PennController,60,_Trial_,End,1692959203168,28,152,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,59,0,block2,NULL,PennController,61,_Header_,Start,1692959203169,37,153,1,6,D,Hatte der Kunde den Diebstahl mitbekommen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,59,0,block2,NULL,PennController,61,_Trial_,Start,1692959203169,37,153,1,6,D,Hatte der Kunde den Diebstahl mitbekommen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,59,0,block2,NULL,PennController,61,_Header_,End,1692959203170,37,153,1,6,D,Hatte der Kunde den Diebstahl mitbekommen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,59,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,3,1692959220761,37,153,1,6,D,Hatte der Kunde den Diebstahl mitbekommen?,paragraph,NULL,1159,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,59,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959220761,37,153,1,6,D,Hatte der Kunde den Diebstahl mitbekommen?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,59,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959220763,37,153,1,6,D,Hatte der Kunde den Diebstahl mitbekommen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,59,0,block2,NULL,Key,ComprehensionDecide,PressedKey,D,1692959222266,37,153,1,6,D,Hatte der Kunde den Diebstahl mitbekommen?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,59,0,block2,NULL,PennController,61,_Trial_,End,1692959222269,37,153,1,6,D,Hatte der Kunde den Diebstahl mitbekommen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,60,0,block2,NULL,PennController,62,_Header_,End,1692959222271,110,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,60,0,block2,NULL,PennController,62,_Header_,Start,1692959222271,110,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,60,0,block2,NULL,PennController,62,_Trial_,Start,1692959222271,110,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,60,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,5,1692959232758,110,255,1,6,,,,NULL,1352,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,60,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959232758,110,255,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,60,0,block2,NULL,PennController,62,_Trial_,End,1692959232764,110,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,61,0,block2,NULL,PennController,63,_Trial_,Start,1692959232766,138,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,61,0,block2,NULL,PennController,63,_Header_,End,1692959232767,138,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,61,0,block2,NULL,PennController,63,_Header_,Start,1692959232767,138,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,61,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,5,1692959243485,138,257,1,6,,,,NULL,1230,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,61,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959243485,138,257,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,61,0,block2,NULL,PennController,63,_Trial_,End,1692959243489,138,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,62,0,block2,NULL,PennController,64,_Header_,End,1692959243491,13,151,1,6,K,Hat dem Schneider der Platz am Eingang gefallen?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,62,0,block2,NULL,PennController,64,_Header_,Start,1692959243491,13,151,1,6,K,Hat dem Schneider der Platz am Eingang gefallen?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,62,0,block2,NULL,PennController,64,_Trial_,Start,1692959243491,13,151,1,6,K,Hat dem Schneider der Platz am Eingang gefallen?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,62,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,5,1692959258139,13,151,1,6,K,Hat dem Schneider der Platz am Eingang gefallen?,continuation,NULL,1230,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,62,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959258139,13,151,1,6,K,Hat dem Schneider der Platz am Eingang gefallen?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,62,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959258142,13,151,1,6,K,Hat dem Schneider der Platz am Eingang gefallen?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,62,0,block2,NULL,Key,ComprehensionDecide,PressedKey,K,1692959261728,13,151,1,6,K,Hat dem Schneider der Platz am Eingang gefallen?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,62,0,block2,NULL,PennController,64,_Trial_,End,1692959261731,13,151,1,6,K,Hat dem Schneider der Platz am Eingang gefallen?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,63,0,block2,NULL,PennController,65,_Header_,End,1692959261733,35,153,1,6,K,Hat das Kind den Teddybären gebastelt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,63,0,block2,NULL,PennController,65,_Header_,Start,1692959261733,35,153,1,6,K,Hat das Kind den Teddybären gebastelt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,63,0,block2,NULL,PennController,65,_Trial_,Start,1692959261733,35,153,1,6,K,Hat das Kind den Teddybären gebastelt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,63,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,2,1692959271656,35,153,1,6,K,Hat das Kind den Teddybären gebastelt?,manipulation,NULL,1030,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,63,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959271656,35,153,1,6,K,Hat das Kind den Teddybären gebastelt?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,63,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959271659,35,153,1,6,K,Hat das Kind den Teddybären gebastelt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,63,0,block2,NULL,Key,ComprehensionDecide,PressedKey,K,1692959273498,35,153,1,6,K,Hat das Kind den Teddybären gebastelt?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,63,0,block2,NULL,PennController,65,_Trial_,End,1692959273502,35,153,1,6,K,Hat das Kind den Teddybären gebastelt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,64,0,block2,NULL,PennController,66,_Header_,End,1692959273504,48,152,1,8,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,64,0,block2,NULL,PennController,66,_Header_,Start,1692959273504,48,152,1,8,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,64,0,block2,NULL,PennController,66,_Trial_,Start,1692959273504,48,152,1,8,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,64,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,5,1692959286577,48,152,1,8,,,,NULL,1497,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,64,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959286577,48,152,1,8,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,64,0,block2,NULL,PennController,66,_Trial_,End,1692959286581,48,152,1,8,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,65,0,block2,NULL,PennController,67,_Header_,Start,1692959286582,3,152,1,6,K,Hat der Busfahrer die Streifenkarte gezeigt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,65,0,block2,NULL,PennController,67,_Trial_,Start,1692959286582,3,152,1,6,K,Hat der Busfahrer die Streifenkarte gezeigt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,65,0,block2,NULL,PennController,67,_Header_,End,1692959286583,3,152,1,6,K,Hat der Busfahrer die Streifenkarte gezeigt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,65,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,3,1692959299748,3,152,1,6,K,Hat der Busfahrer die Streifenkarte gezeigt?,manipulation,NULL,2597,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,65,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959299748,3,152,1,6,K,Hat der Busfahrer die Streifenkarte gezeigt?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,65,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959299750,3,152,1,6,K,Hat der Busfahrer die Streifenkarte gezeigt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,65,0,block2,NULL,Key,ComprehensionDecide,PressedKey,K,1692959301602,3,152,1,6,K,Hat der Busfahrer die Streifenkarte gezeigt?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,65,0,block2,NULL,PennController,67,_Trial_,End,1692959301605,3,152,1,6,K,Hat der Busfahrer die Streifenkarte gezeigt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,66,0,block2,NULL,PennController,68,_Header_,End,1692959301606,136,257,1,6,K,Wollte das Mädchen Surfen gehen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,66,0,block2,NULL,PennController,68,_Header_,Start,1692959301606,136,257,1,6,K,Wollte das Mädchen Surfen gehen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,66,0,block2,NULL,PennController,68,_Trial_,Start,1692959301606,136,257,1,6,K,Wollte das Mädchen Surfen gehen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,66,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,5,1692959313162,136,257,1,6,K,Wollte das Mädchen Surfen gehen?,paragraph,NULL,1377,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,66,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959313162,136,257,1,6,K,Wollte das Mädchen Surfen gehen?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,66,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959313164,136,257,1,6,K,Wollte das Mädchen Surfen gehen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,66,0,block2,NULL,Key,ComprehensionDecide,PressedKey,K,1692959315916,136,257,1,6,K,Wollte das Mädchen Surfen gehen?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,66,0,block2,NULL,PennController,68,_Trial_,End,1692959315919,136,257,1,6,K,Wollte das Mädchen Surfen gehen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,67,0,block2,NULL,PennController,69,_Header_,Start,1692959315920,44,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,67,0,block2,NULL,PennController,69,_Trial_,Start,1692959315920,44,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,67,0,block2,NULL,PennController,69,_Header_,End,1692959315921,44,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,67,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,2,1692959332898,44,153,1,6,,,,NULL,994,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,67,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959332898,44,153,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,67,0,block2,NULL,PennController,69,_Trial_,End,1692959332901,44,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,68,0,block2,NULL,PennController,70,_Header_,End,1692959332902,140,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,68,0,block2,NULL,PennController,70,_Header_,Start,1692959332902,140,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,68,0,block2,NULL,PennController,70,_Trial_,Start,1692959332902,140,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,68,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,2,1692959345916,140,257,1,6,,,,NULL,1013,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,68,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959345916,140,257,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,68,0,block2,NULL,PennController,70,_Trial_,End,1692959345919,140,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,69,0,block2,NULL,PennController,71,_Header_,End,1692959345921,108,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,69,0,block2,NULL,PennController,71,_Header_,Start,1692959345921,108,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,69,0,block2,NULL,PennController,71,_Trial_,Start,1692959345921,108,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,69,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,6,1692959359966,108,255,1,6,,,,NULL,1184,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,69,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959359966,108,255,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,69,0,block2,NULL,PennController,71,_Trial_,End,1692959359971,108,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,70,0,block2,NULL,PennController,72,_Header_,End,1692959359973,11,151,1,8,K,Hat der Flyer zusätzliche Informationen enthalten?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,70,0,block2,NULL,PennController,72,_Header_,Start,1692959359973,11,151,1,8,K,Hat der Flyer zusätzliche Informationen enthalten?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,70,0,block2,NULL,PennController,72,_Trial_,Start,1692959359973,11,151,1,8,K,Hat der Flyer zusätzliche Informationen enthalten?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,70,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,5,1692959373216,11,151,1,8,K,Hat der Flyer zusätzliche Informationen enthalten?,paragraph,NULL,1208,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,70,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959373216,11,151,1,8,K,Hat der Flyer zusätzliche Informationen enthalten?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,70,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959373218,11,151,1,8,K,Hat der Flyer zusätzliche Informationen enthalten?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,70,0,block2,NULL,Key,ComprehensionDecide,PressedKey,K,1692959374853,11,151,1,8,K,Hat der Flyer zusätzliche Informationen enthalten?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,70,0,block2,NULL,PennController,72,_Trial_,End,1692959374857,11,151,1,8,K,Hat der Flyer zusätzliche Informationen enthalten?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,71,0,block2,NULL,PennController,73,_Header_,End,1692959374859,122,256,1,8,D,Ist die Fahrschülerin zur Arbeit gegangen?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,71,0,block2,NULL,PennController,73,_Header_,Start,1692959374859,122,256,1,8,D,Ist die Fahrschülerin zur Arbeit gegangen?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,71,0,block2,NULL,PennController,73,_Trial_,Start,1692959374859,122,256,1,8,D,Ist die Fahrschülerin zur Arbeit gegangen?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,71,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,2,1692959388384,122,256,1,8,D,Ist die Fahrschülerin zur Arbeit gegangen?,continuation,NULL,1005,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,71,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959388384,122,256,1,8,D,Ist die Fahrschülerin zur Arbeit gegangen?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,71,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959388386,122,256,1,8,D,Ist die Fahrschülerin zur Arbeit gegangen?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,71,0,block2,NULL,Key,ComprehensionDecide,PressedKey,D,1692959389665,122,256,1,8,D,Ist die Fahrschülerin zur Arbeit gegangen?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,71,0,block2,NULL,PennController,73,_Trial_,End,1692959389668,122,256,1,8,D,Ist die Fahrschülerin zur Arbeit gegangen?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,72,0,block2,NULL,PennController,74,_Header_,End,1692959389670,125,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,72,0,block2,NULL,PennController,74,_Header_,Start,1692959389670,125,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,72,0,block2,NULL,PennController,74,_Trial_,Start,1692959389670,125,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,72,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,3,1692959402678,125,256,1,6,,,,NULL,1235,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,72,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959402678,125,256,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,72,0,block2,NULL,PennController,74,_Trial_,End,1692959402682,125,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,73,0,block2,NULL,PennController,75,_Header_,End,1692959402683,56,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,73,0,block2,NULL,PennController,75,_Header_,Start,1692959402683,56,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,73,0,block2,NULL,PennController,75,_Trial_,Start,1692959402683,56,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,73,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,5,1692959417201,56,151,1,6,,,,NULL,1107,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,73,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959417201,56,151,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,73,0,block2,NULL,PennController,75,_Trial_,End,1692959417205,56,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,74,0,block2,NULL,PennController,76,_Header_,Start,1692959417206,46,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,74,0,block2,NULL,PennController,76,_Trial_,Start,1692959417206,46,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,74,0,block2,NULL,PennController,76,_Header_,End,1692959417207,46,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,74,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,2,1692959429282,46,153,1,6,,,,NULL,1009,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,74,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959429282,46,153,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,74,0,block2,NULL,PennController,76,_Trial_,End,1692959429285,46,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,75,0,block2,NULL,PennController,77,_Header_,End,1692959429286,60,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,75,0,block2,NULL,PennController,77,_Header_,Start,1692959429286,60,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,75,0,block2,NULL,PennController,77,_Trial_,Start,1692959429286,60,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,75,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,5,1692959440044,60,151,1,6,,,,NULL,1475,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,75,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959440044,60,151,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,75,0,block2,NULL,PennController,77,_Trial_,End,1692959440047,60,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,76,0,block2,NULL,PennController,78,_Header_,End,1692959440048,49,153,1,6,D,Hat die Betreuerin den Vortrag gehalten?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,76,0,block2,NULL,PennController,78,_Header_,Start,1692959440048,49,153,1,6,D,Hat die Betreuerin den Vortrag gehalten?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,76,0,block2,NULL,PennController,78,_Trial_,Start,1692959440048,49,153,1,6,D,Hat die Betreuerin den Vortrag gehalten?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,76,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,2,1692959451380,49,153,1,6,D,Hat die Betreuerin den Vortrag gehalten?,continuation,NULL,946,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,76,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959451380,49,153,1,6,D,Hat die Betreuerin den Vortrag gehalten?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,76,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959451383,49,153,1,6,D,Hat die Betreuerin den Vortrag gehalten?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,76,0,block2,NULL,Key,ComprehensionDecide,PressedKey,D,1692959452647,49,153,1,6,D,Hat die Betreuerin den Vortrag gehalten?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,76,0,block2,NULL,PennController,78,_Trial_,End,1692959452650,49,153,1,6,D,Hat die Betreuerin den Vortrag gehalten?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,77,0,block2,NULL,PennController,79,_Header_,End,1692959452652,57,152,1,6,D,Wurde der Verbrecher vom Hund überrascht?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,77,0,block2,NULL,PennController,79,_Header_,Start,1692959452652,57,152,1,6,D,Wurde der Verbrecher vom Hund überrascht?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,77,0,block2,NULL,PennController,79,_Trial_,Start,1692959452652,57,152,1,6,D,Wurde der Verbrecher vom Hund überrascht?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,77,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,4,1692959468334,57,152,1,6,D,Wurde der Verbrecher vom Hund überrascht?,paragraph,NULL,1029,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,77,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959468334,57,152,1,6,D,Wurde der Verbrecher vom Hund überrascht?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,77,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959468337,57,152,1,6,D,Wurde der Verbrecher vom Hund überrascht?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,77,0,block2,NULL,Key,ComprehensionDecide,PressedKey,D,1692959469669,57,152,1,6,D,Wurde der Verbrecher vom Hund überrascht?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,77,0,block2,NULL,PennController,79,_Trial_,End,1692959469672,57,152,1,6,D,Wurde der Verbrecher vom Hund überrascht?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,78,0,block2,NULL,PennController,80,_Header_,End,1692959469674,59,151,1,6,D,Hat der Kumpel eine Forelle geangelt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,78,0,block2,NULL,PennController,80,_Header_,Start,1692959469674,59,151,1,6,D,Hat der Kumpel eine Forelle geangelt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,78,0,block2,NULL,PennController,80,_Trial_,Start,1692959469674,59,151,1,6,D,Hat der Kumpel eine Forelle geangelt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,78,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,5,1692959479761,59,151,1,6,D,Hat der Kumpel eine Forelle geangelt?,manipulation,NULL,1106,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,78,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959479761,59,151,1,6,D,Hat der Kumpel eine Forelle geangelt?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,78,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959479763,59,151,1,6,D,Hat der Kumpel eine Forelle geangelt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,78,0,block2,NULL,Key,ComprehensionDecide,PressedKey,D,1692959480757,59,151,1,6,D,Hat der Kumpel eine Forelle geangelt?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,78,0,block2,NULL,PennController,80,_Trial_,End,1692959480761,59,151,1,6,D,Hat der Kumpel eine Forelle geangelt?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,79,0,block2,NULL,PennController,81,_Header_,End,1692959480763,124,256,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,79,0,block2,NULL,PennController,81,_Header_,Start,1692959480763,124,256,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,79,0,block2,NULL,PennController,81,_Trial_,Start,1692959480763,124,256,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,79,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,5,1692959493958,124,256,1,7,,,,NULL,1469,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,79,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959493958,124,256,1,7,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,79,0,block2,NULL,PennController,81,_Trial_,End,1692959493961,124,256,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,80,0,block2,NULL,PennController,82,_Header_,End,1692959493962,52,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,80,0,block2,NULL,PennController,82,_Header_,Start,1692959493962,52,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,80,0,block2,NULL,PennController,82,_Trial_,Start,1692959493962,52,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,80,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,2,1692959505193,52,153,1,6,,,,NULL,1006,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,80,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959505193,52,153,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,80,0,block2,NULL,PennController,82,_Trial_,End,1692959505196,52,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,81,0,block2,NULL,PennController,83,_Header_,End,1692959505198,139,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,81,0,block2,NULL,PennController,83,_Header_,Start,1692959505198,139,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,81,0,block2,NULL,PennController,83,_Trial_,Start,1692959505198,139,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,81,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,5,1692959519799,139,257,1,6,,,,NULL,1237,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,81,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959519799,139,257,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,81,0,block2,NULL,PennController,83,_Trial_,End,1692959519802,139,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,82,0,block2,NULL,PennController,84,_Header_,End,1692959519803,30,152,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,82,0,block2,NULL,PennController,84,_Header_,Start,1692959519803,30,152,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,82,0,block2,NULL,PennController,84,_Trial_,Start,1692959519803,30,152,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,82,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,2,1692959531255,30,152,1,7,,,,NULL,1079,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,82,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959531255,30,152,1,7,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,82,0,block2,NULL,PennController,84,_Trial_,End,1692959531258,30,152,1,7,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,83,0,block2,NULL,PennController,85,_Header_,Start,1692959531259,106,255,1,6,K,Hat der Bauleiter den Maurer zu mehr Sorgfalt aufgefordert?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,83,0,block2,NULL,PennController,85,_Trial_,Start,1692959531259,106,255,1,6,K,Hat der Bauleiter den Maurer zu mehr Sorgfalt aufgefordert?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,83,0,block2,NULL,PennController,85,_Header_,End,1692959531260,106,255,1,6,K,Hat der Bauleiter den Maurer zu mehr Sorgfalt aufgefordert?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,83,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,NULL,6,1692959541417,106,255,1,6,K,Hat der Bauleiter den Maurer zu mehr Sorgfalt aufgefordert?,continuation,NULL,1116,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,83,0,block2,NULL,Controller-AcceptabilityJudgment,block2_accept,,NULL,1692959541417,106,255,1,6,K,Hat der Bauleiter den Maurer zu mehr Sorgfalt aufgefordert?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,83,0,block2,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959541420,106,255,1,6,K,Hat der Bauleiter den Maurer zu mehr Sorgfalt aufgefordert?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,83,0,block2,NULL,Key,ComprehensionDecide,PressedKey,K,1692959543569,106,255,1,6,K,Hat der Bauleiter den Maurer zu mehr Sorgfalt aufgefordert?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,83,0,block2,NULL,PennController,85,_Trial_,End,1692959543572,106,255,1,6,K,Hat der Bauleiter den Maurer zu mehr Sorgfalt aufgefordert?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,85,0,block3,NULL,PennController,86,_Header_,End,1692959666143,119,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,85,0,block3,NULL,PennController,86,_Header_,Start,1692959666143,119,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,85,0,block3,NULL,PennController,86,_Trial_,Start,1692959666143,119,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,85,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,5,1692959679282,119,256,1,6,,,,NULL,1355,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,85,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959679282,119,256,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,85,0,block3,NULL,PennController,86,_Trial_,End,1692959679285,119,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,86,0,block3,NULL,PennController,87,_Header_,End,1692959679287,131,257,1,6,K,Hat der Professor die Haushaltshilfe in den Feierabend entlassen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,86,0,block3,NULL,PennController,87,_Header_,Start,1692959679287,131,257,1,6,K,Hat der Professor die Haushaltshilfe in den Feierabend entlassen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,86,0,block3,NULL,PennController,87,_Trial_,Start,1692959679287,131,257,1,6,K,Hat der Professor die Haushaltshilfe in den Feierabend entlassen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,86,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,2,1692959690970,131,257,1,6,K,Hat der Professor die Haushaltshilfe in den Feierabend entlassen?,manipulation,NULL,1137,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,86,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959690970,131,257,1,6,K,Hat der Professor die Haushaltshilfe in den Feierabend entlassen?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,86,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959690972,131,257,1,6,K,Hat der Professor die Haushaltshilfe in den Feierabend entlassen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,86,0,block3,NULL,Key,ComprehensionDecide,PressedKey,K,1692959692631,131,257,1,6,K,Hat der Professor die Haushaltshilfe in den Feierabend entlassen?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,86,0,block3,NULL,PennController,87,_Trial_,End,1692959692634,131,257,1,6,K,Hat der Professor die Haushaltshilfe in den Feierabend entlassen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,87,0,block3,NULL,PennController,88,_Header_,End,1692959692636,135,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,87,0,block3,NULL,PennController,88,_Header_,Start,1692959692636,135,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,87,0,block3,NULL,PennController,88,_Trial_,Start,1692959692636,135,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,87,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,2,1692959704026,135,257,1,6,,,,NULL,1320,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,87,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959704026,135,257,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,87,0,block3,NULL,PennController,88,_Trial_,End,1692959704029,135,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,88,0,block3,NULL,PennController,89,_Header_,Start,1692959704030,26,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,88,0,block3,NULL,PennController,89,_Trial_,Start,1692959704030,26,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,88,0,block3,NULL,PennController,89,_Header_,End,1692959704031,26,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,88,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,5,1692959716941,26,151,1,6,,,,NULL,1210,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,88,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959716941,26,151,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,88,0,block3,NULL,PennController,89,_Trial_,End,1692959716943,26,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,89,0,block3,NULL,PennController,90,_Header_,End,1692959716945,4,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,89,0,block3,NULL,PennController,90,_Header_,Start,1692959716945,4,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,89,0,block3,NULL,PennController,90,_Trial_,Start,1692959716945,4,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,89,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,1,1692959727231,4,153,1,6,,,,NULL,974,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,89,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959727231,4,153,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,89,0,block3,NULL,PennController,90,_Trial_,End,1692959727234,4,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,90,0,block3,NULL,PennController,91,_Header_,Start,1692959727235,7,153,1,6,K,Hat der Metzger die Fleischwurst gemietet?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,90,0,block3,NULL,PennController,91,_Trial_,Start,1692959727235,7,153,1,6,K,Hat der Metzger die Fleischwurst gemietet?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,90,0,block3,NULL,PennController,91,_Header_,End,1692959727236,7,153,1,6,K,Hat der Metzger die Fleischwurst gemietet?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,90,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,1,1692959739289,7,153,1,6,K,Hat der Metzger die Fleischwurst gemietet?,manipulation,NULL,1121,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,90,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959739289,7,153,1,6,K,Hat der Metzger die Fleischwurst gemietet?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,90,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959739291,7,153,1,6,K,Hat der Metzger die Fleischwurst gemietet?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,90,0,block3,NULL,Key,ComprehensionDecide,PressedKey,K,1692959741312,7,153,1,6,K,Hat der Metzger die Fleischwurst gemietet?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,90,0,block3,NULL,PennController,91,_Trial_,End,1692959741313,7,153,1,6,K,Hat der Metzger die Fleischwurst gemietet?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,91,0,block3,NULL,PennController,92,_Header_,End,1692959741314,117,256,1,6,D,Wollte das Mädchen seinen Papa besuchen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,91,0,block3,NULL,PennController,92,_Header_,Start,1692959741314,117,256,1,6,D,Wollte das Mädchen seinen Papa besuchen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,91,0,block3,NULL,PennController,92,_Trial_,Start,1692959741314,117,256,1,6,D,Wollte das Mädchen seinen Papa besuchen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,91,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,6,1692959755279,117,256,1,6,D,Wollte das Mädchen seinen Papa besuchen?,paragraph,NULL,1012,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,91,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959755279,117,256,1,6,D,Wollte das Mädchen seinen Papa besuchen?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,91,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959755282,117,256,1,6,D,Wollte das Mädchen seinen Papa besuchen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,91,0,block3,NULL,Key,ComprehensionDecide,PressedKey,D,1692959757143,117,256,1,6,D,Wollte das Mädchen seinen Papa besuchen?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,91,0,block3,NULL,PennController,92,_Trial_,End,1692959757147,117,256,1,6,D,Wollte das Mädchen seinen Papa besuchen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,92,0,block3,NULL,PennController,93,_Header_,End,1692959757148,39,152,1,6,D,Hat die Babysitterin die Tochter getestet?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,92,0,block3,NULL,PennController,93,_Header_,Start,1692959757148,39,152,1,6,D,Hat die Babysitterin die Tochter getestet?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,92,0,block3,NULL,PennController,93,_Trial_,Start,1692959757148,39,152,1,6,D,Hat die Babysitterin die Tochter getestet?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,92,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,2,1692959768855,39,152,1,6,D,Hat die Babysitterin die Tochter getestet?,manipulation,NULL,1448,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,92,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959768855,39,152,1,6,D,Hat die Babysitterin die Tochter getestet?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,92,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959768857,39,152,1,6,D,Hat die Babysitterin die Tochter getestet?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,92,0,block3,NULL,Key,ComprehensionDecide,PressedKey,K,1692959770380,39,152,1,6,D,Hat die Babysitterin die Tochter getestet?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,92,0,block3,NULL,PennController,93,_Trial_,End,1692959770384,39,152,1,6,D,Hat die Babysitterin die Tochter getestet?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,93,0,block3,NULL,PennController,94,_Header_,End,1692959770387,38,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,93,0,block3,NULL,PennController,94,_Header_,Start,1692959770387,38,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,93,0,block3,NULL,PennController,94,_Trial_,Start,1692959770387,38,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,93,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,3,1692959782556,38,152,1,6,,,,NULL,1734,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,93,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959782556,38,152,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,93,0,block3,NULL,PennController,94,_Trial_,End,1692959782560,38,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,94,0,block3,NULL,PennController,95,_Header_,End,1692959782562,103,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,94,0,block3,NULL,PennController,95,_Header_,Start,1692959782562,103,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,94,0,block3,NULL,PennController,95,_Trial_,Start,1692959782562,103,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,94,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,5,1692959792841,103,255,1,6,,,,NULL,1226,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,94,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959792841,103,255,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,94,0,block3,NULL,PennController,95,_Trial_,End,1692959792845,103,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,95,0,block3,NULL,PennController,96,_Header_,End,1692959792846,36,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,95,0,block3,NULL,PennController,96,_Header_,Start,1692959792846,36,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,95,0,block3,NULL,PennController,96,_Trial_,Start,1692959792846,36,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,95,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,4,1692959806556,36,152,1,6,,,,NULL,963,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,95,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959806556,36,152,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,95,0,block3,NULL,PennController,96,_Trial_,End,1692959806559,36,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,96,0,block3,NULL,PennController,97,_Header_,End,1692959806561,104,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,96,0,block3,NULL,PennController,97,_Header_,Start,1692959806561,104,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,96,0,block3,NULL,PennController,97,_Trial_,Start,1692959806561,104,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,96,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,4,1692959817543,104,255,1,6,,,,NULL,1166,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,96,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959817543,104,255,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,96,0,block3,NULL,PennController,97,_Trial_,End,1692959817546,104,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,97,0,block3,NULL,PennController,98,_Header_,End,1692959817547,42,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,97,0,block3,NULL,PennController,98,_Header_,Start,1692959817547,42,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,97,0,block3,NULL,PennController,98,_Trial_,Start,1692959817547,42,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,97,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,3,1692959829276,42,152,1,6,,,,NULL,2653,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,97,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959829276,42,152,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,97,0,block3,NULL,PennController,98,_Trial_,End,1692959829279,42,152,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,98,0,block3,NULL,PennController,99,_Header_,End,1692959829281,47,151,1,6,D,Wollte der Soldat die Frau an anderen Zivilisten vorbei schmuggeln?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,98,0,block3,NULL,PennController,99,_Header_,Start,1692959829281,47,151,1,6,D,Wollte der Soldat die Frau an anderen Zivilisten vorbei schmuggeln?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,98,0,block3,NULL,PennController,99,_Trial_,Start,1692959829281,47,151,1,6,D,Wollte der Soldat die Frau an anderen Zivilisten vorbei schmuggeln?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,98,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,5,1692959843570,47,151,1,6,D,Wollte der Soldat die Frau an anderen Zivilisten vorbei schmuggeln?,paragraph,NULL,1949,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,98,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959843570,47,151,1,6,D,Wollte der Soldat die Frau an anderen Zivilisten vorbei schmuggeln?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,98,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959843573,47,151,1,6,D,Wollte der Soldat die Frau an anderen Zivilisten vorbei schmuggeln?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,98,0,block3,NULL,Key,ComprehensionDecide,PressedKey,D,1692959847182,47,151,1,6,D,Wollte der Soldat die Frau an anderen Zivilisten vorbei schmuggeln?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,98,0,block3,NULL,PennController,99,_Trial_,End,1692959847185,47,151,1,6,D,Wollte der Soldat die Frau an anderen Zivilisten vorbei schmuggeln?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,99,0,block3,NULL,PennController,100,_Header_,End,1692959847187,101,255,1,7,K,Ist der Journalist in ein italienisches Restaurant gegangen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,99,0,block3,NULL,PennController,100,_Header_,Start,1692959847187,101,255,1,7,K,Ist der Journalist in ein italienisches Restaurant gegangen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,99,0,block3,NULL,PennController,100,_Trial_,Start,1692959847187,101,255,1,7,K,Ist der Journalist in ein italienisches Restaurant gegangen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,99,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,5,1692959856363,101,255,1,7,K,Ist der Journalist in ein italienisches Restaurant gegangen?,paragraph,NULL,1139,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,99,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959856363,101,255,1,7,K,Ist der Journalist in ein italienisches Restaurant gegangen?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,99,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959856366,101,255,1,7,K,Ist der Journalist in ein italienisches Restaurant gegangen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,99,0,block3,NULL,Key,ComprehensionDecide,PressedKey,K,1692959858409,101,255,1,7,K,Ist der Journalist in ein italienisches Restaurant gegangen?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,99,0,block3,NULL,PennController,100,_Trial_,End,1692959858413,101,255,1,7,K,Ist der Journalist in ein italienisches Restaurant gegangen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,100,0,block3,NULL,PennController,101,_Header_,End,1692959858414,18,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,100,0,block3,NULL,PennController,101,_Header_,Start,1692959858414,18,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,100,0,block3,NULL,PennController,101,_Trial_,Start,1692959858414,18,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,100,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,1,1692959870026,18,153,1,6,,,,NULL,1527,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,100,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959870026,18,153,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,100,0,block3,NULL,PennController,101,_Trial_,End,1692959870028,18,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,101,0,block3,NULL,PennController,102,_Header_,End,1692959870030,32,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,101,0,block3,NULL,PennController,102,_Header_,Start,1692959870030,32,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,101,0,block3,NULL,PennController,102,_Trial_,Start,1692959870030,32,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,101,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,2,1692959884768,32,151,1,6,,,,NULL,1408,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,101,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959884768,32,151,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,101,0,block3,NULL,PennController,102,_Trial_,End,1692959884771,32,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,102,0,block3,NULL,PennController,103,_Header_,End,1692959884773,5,151,1,6,K,Hat es nach dem Opa noch einen anderen Kunden gegeben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,102,0,block3,NULL,PennController,103,_Header_,Start,1692959884773,5,151,1,6,K,Hat es nach dem Opa noch einen anderen Kunden gegeben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,102,0,block3,NULL,PennController,103,_Trial_,Start,1692959884773,5,151,1,6,K,Hat es nach dem Opa noch einen anderen Kunden gegeben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,102,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,5,1692959898271,5,151,1,6,K,Hat es nach dem Opa noch einen anderen Kunden gegeben?,continuation,NULL,1603,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,102,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959898271,5,151,1,6,K,Hat es nach dem Opa noch einen anderen Kunden gegeben?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,102,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959898273,5,151,1,6,K,Hat es nach dem Opa noch einen anderen Kunden gegeben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,102,0,block3,NULL,Key,ComprehensionDecide,PressedKey,K,1692959899952,5,151,1,6,K,Hat es nach dem Opa noch einen anderen Kunden gegeben?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,102,0,block3,NULL,PennController,103,_Trial_,End,1692959899955,5,151,1,6,K,Hat es nach dem Opa noch einen anderen Kunden gegeben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,103,0,block3,NULL,PennController,104,_Header_,End,1692959899957,53,151,1,6,D,Hat der Architekt die Rede schreiben lassen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,103,0,block3,NULL,PennController,104,_Header_,Start,1692959899957,53,151,1,6,D,Hat der Architekt die Rede schreiben lassen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,103,0,block3,NULL,PennController,104,_Trial_,Start,1692959899957,53,151,1,6,D,Hat der Architekt die Rede schreiben lassen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,103,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,4,1692959912875,53,151,1,6,D,Hat der Architekt die Rede schreiben lassen?,manipulation,NULL,1279,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,103,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959912875,53,151,1,6,D,Hat der Architekt die Rede schreiben lassen?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,103,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959912877,53,151,1,6,D,Hat der Architekt die Rede schreiben lassen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,103,0,block3,NULL,Key,ComprehensionDecide,PressedKey,D,1692959914519,53,151,1,6,D,Hat der Architekt die Rede schreiben lassen?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,103,0,block3,NULL,PennController,104,_Trial_,End,1692959914522,53,151,1,6,D,Hat der Architekt die Rede schreiben lassen?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,104,0,block3,NULL,PennController,105,_Header_,Start,1692959914523,51,152,1,8,D,War die Erzieherin über den Termin verärgert gewesen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,104,0,block3,NULL,PennController,105,_Trial_,Start,1692959914523,51,152,1,8,D,War die Erzieherin über den Termin verärgert gewesen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,104,0,block3,NULL,PennController,105,_Header_,End,1692959914524,51,152,1,8,D,War die Erzieherin über den Termin verärgert gewesen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,104,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,3,1692959927157,51,152,1,8,D,War die Erzieherin über den Termin verärgert gewesen?,paragraph,NULL,1210,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,104,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959927157,51,152,1,8,D,War die Erzieherin über den Termin verärgert gewesen?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,104,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959927159,51,152,1,8,D,War die Erzieherin über den Termin verärgert gewesen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,104,0,block3,NULL,Key,ComprehensionDecide,PressedKey,D,1692959928688,51,152,1,8,D,War die Erzieherin über den Termin verärgert gewesen?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,104,0,block3,NULL,PennController,105,_Trial_,End,1692959928692,51,152,1,8,D,War die Erzieherin über den Termin verärgert gewesen?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,105,0,block3,NULL,PennController,106,_Header_,End,1692959928694,33,152,1,6,K,War die Besucherin auf der Suche nach einem bestimmten Raum?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,105,0,block3,NULL,PennController,106,_Header_,Start,1692959928694,33,152,1,6,K,War die Besucherin auf der Suche nach einem bestimmten Raum?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,105,0,block3,NULL,PennController,106,_Trial_,Start,1692959928694,33,152,1,6,K,War die Besucherin auf der Suche nach einem bestimmten Raum?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,105,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,2,1692959942426,33,152,1,6,K,War die Besucherin auf der Suche nach einem bestimmten Raum?,paragraph,NULL,1183,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,105,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959942426,33,152,1,6,K,War die Besucherin auf der Suche nach einem bestimmten Raum?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,105,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959942429,33,152,1,6,K,War die Besucherin auf der Suche nach einem bestimmten Raum?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,105,0,block3,NULL,Key,ComprehensionDecide,PressedKey,K,1692959944014,33,152,1,6,K,War die Besucherin auf der Suche nach einem bestimmten Raum?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,105,0,block3,NULL,PennController,106,_Trial_,End,1692959944018,33,152,1,6,K,War die Besucherin auf der Suche nach einem bestimmten Raum?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,106,0,block3,NULL,PennController,107,_Header_,Start,1692959944021,118,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,106,0,block3,NULL,PennController,107,_Trial_,Start,1692959944021,118,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,106,0,block3,NULL,PennController,107,_Header_,End,1692959944022,118,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,106,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,4,1692959961125,118,256,1,6,,,,NULL,930,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,106,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959961125,118,256,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,106,0,block3,NULL,PennController,107,_Trial_,End,1692959961128,118,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,107,0,block3,NULL,PennController,108,_Header_,End,1692959961130,1,153,1,6,K,War der Koffer am Anfang zu schwer?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,107,0,block3,NULL,PennController,108,_Header_,Start,1692959961130,1,153,1,6,K,War der Koffer am Anfang zu schwer?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,107,0,block3,NULL,PennController,108,_Trial_,Start,1692959961130,1,153,1,6,K,War der Koffer am Anfang zu schwer?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,107,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,1,1692959971723,1,153,1,6,K,War der Koffer am Anfang zu schwer?,paragraph,NULL,1111,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,107,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959971723,1,153,1,6,K,War der Koffer am Anfang zu schwer?,paragraph,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,107,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959971726,1,153,1,6,K,War der Koffer am Anfang zu schwer?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,107,0,block3,NULL,Key,ComprehensionDecide,PressedKey,K,1692959973269,1,153,1,6,K,War der Koffer am Anfang zu schwer?,paragraph,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,107,0,block3,NULL,PennController,108,_Trial_,End,1692959973272,1,153,1,6,K,War der Koffer am Anfang zu schwer?,paragraph,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,108,0,block3,NULL,PennController,109,_Header_,Start,1692959973274,9,152,1,6,K,Hat der Kapitän dem Pärchen geholfen?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,108,0,block3,NULL,PennController,109,_Trial_,Start,1692959973274,9,152,1,6,K,Hat der Kapitän dem Pärchen geholfen?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,108,0,block3,NULL,PennController,109,_Header_,End,1692959973275,9,152,1,6,K,Hat der Kapitän dem Pärchen geholfen?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,108,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,4,1692959982848,9,152,1,6,K,Hat der Kapitän dem Pärchen geholfen?,continuation,NULL,1313,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,108,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959982848,9,152,1,6,K,Hat der Kapitän dem Pärchen geholfen?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,108,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959982850,9,152,1,6,K,Hat der Kapitän dem Pärchen geholfen?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,108,0,block3,NULL,Key,ComprehensionDecide,PressedKey,K,1692959984224,9,152,1,6,K,Hat der Kapitän dem Pärchen geholfen?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,108,0,block3,NULL,PennController,109,_Trial_,End,1692959984227,9,152,1,6,K,Hat der Kapitän dem Pärchen geholfen?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,109,0,block3,NULL,PennController,110,_Header_,End,1692959984229,132,257,1,6,D,Hat der Biologe nach dem Aufbau des Mikroskops die Arbeit auf den nächsten Tag verschoben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,109,0,block3,NULL,PennController,110,_Header_,Start,1692959984229,132,257,1,6,D,Hat der Biologe nach dem Aufbau des Mikroskops die Arbeit auf den nächsten Tag verschoben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,109,0,block3,NULL,PennController,110,_Trial_,Start,1692959984229,132,257,1,6,D,Hat der Biologe nach dem Aufbau des Mikroskops die Arbeit auf den nächsten Tag verschoben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,109,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,2,1692959993798,132,257,1,6,D,Hat der Biologe nach dem Aufbau des Mikroskops die Arbeit auf den nächsten Tag verschoben?,continuation,NULL,916,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,109,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692959993798,132,257,1,6,D,Hat der Biologe nach dem Aufbau des Mikroskops die Arbeit auf den nächsten Tag verschoben?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,109,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692959993800,132,257,1,6,D,Hat der Biologe nach dem Aufbau des Mikroskops die Arbeit auf den nächsten Tag verschoben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,109,0,block3,NULL,Key,ComprehensionDecide,PressedKey,D,1692959995815,132,257,1,6,D,Hat der Biologe nach dem Aufbau des Mikroskops die Arbeit auf den nächsten Tag verschoben?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,109,0,block3,NULL,PennController,110,_Trial_,End,1692959995818,132,257,1,6,D,Hat der Biologe nach dem Aufbau des Mikroskops die Arbeit auf den nächsten Tag verschoben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,110,0,block3,NULL,PennController,111,_Header_,End,1692959995819,10,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,110,0,block3,NULL,PennController,111,_Header_,Start,1692959995819,10,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,110,0,block3,NULL,PennController,111,_Trial_,Start,1692959995819,10,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,110,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,2,1692960006603,10,153,1,6,,,,NULL,998,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,110,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692960006603,10,153,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,110,0,block3,NULL,PennController,111,_Trial_,End,1692960006606,10,153,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,111,0,block3,NULL,PennController,112,_Header_,End,1692960006607,105,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,111,0,block3,NULL,PennController,112,_Header_,Start,1692960006607,105,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,111,0,block3,NULL,PennController,112,_Trial_,Start,1692960006607,105,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,111,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,4,1692960017197,105,255,1,6,,,,NULL,1254,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,111,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692960017197,105,255,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,111,0,block3,NULL,PennController,112,_Trial_,End,1692960017200,105,255,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,112,0,block3,NULL,PennController,113,_Header_,End,1692960017201,34,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,112,0,block3,NULL,PennController,113,_Header_,Start,1692960017201,34,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,112,0,block3,NULL,PennController,113,_Trial_,Start,1692960017201,34,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,112,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,3,1692960032678,34,151,1,6,,,,NULL,1181,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,112,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692960032678,34,151,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,112,0,block3,NULL,PennController,113,_Trial_,End,1692960032681,34,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,113,0,block3,NULL,PennController,114,_Header_,Start,1692960032682,133,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,113,0,block3,NULL,PennController,114,_Trial_,Start,1692960032682,133,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,113,0,block3,NULL,PennController,114,_Header_,End,1692960032683,133,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,113,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,2,1692960046734,133,257,1,6,,,,NULL,859,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,113,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692960046734,133,257,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,113,0,block3,NULL,PennController,114,_Trial_,End,1692960046737,133,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,114,0,block3,NULL,PennController,115,_Header_,End,1692960046739,116,256,1,7,K,Hat der Prinz die Prinzessin befreit?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,114,0,block3,NULL,PennController,115,_Header_,Start,1692960046739,116,256,1,7,K,Hat der Prinz die Prinzessin befreit?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,114,0,block3,NULL,PennController,115,_Trial_,Start,1692960046739,116,256,1,7,K,Hat der Prinz die Prinzessin befreit?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,114,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,5,1692960058128,116,256,1,7,K,Hat der Prinz die Prinzessin befreit?,continuation,NULL,1651,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,114,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692960058128,116,256,1,7,K,Hat der Prinz die Prinzessin befreit?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,114,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692960058130,116,256,1,7,K,Hat der Prinz die Prinzessin befreit?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,114,0,block3,NULL,Key,ComprehensionDecide,PressedKey,K,1692960059722,116,256,1,7,K,Hat der Prinz die Prinzessin befreit?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,114,0,block3,NULL,PennController,115,_Trial_,End,1692960059725,116,256,1,7,K,Hat der Prinz die Prinzessin befreit?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,115,0,block3,NULL,PennController,116,_Header_,End,1692960059727,120,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,115,0,block3,NULL,PennController,116,_Header_,Start,1692960059727,120,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,115,0,block3,NULL,PennController,116,_Trial_,Start,1692960059727,120,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,115,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,2,1692960069107,120,256,1,6,,,,NULL,915,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,115,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692960069107,120,256,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,115,0,block3,NULL,PennController,116,_Trial_,End,1692960069110,120,256,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,116,0,block3,NULL,PennController,117,_Header_,End,1692960069111,134,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,116,0,block3,NULL,PennController,117,_Header_,Start,1692960069111,134,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,116,0,block3,NULL,PennController,117,_Trial_,Start,1692960069111,134,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,116,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,4,1692960082398,134,257,1,6,,,,NULL,1259,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,116,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692960082398,134,257,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,116,0,block3,NULL,PennController,117,_Trial_,End,1692960082400,134,257,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,117,0,block3,NULL,PennController,118,_Header_,End,1692960082402,102,255,1,6,D,Hat die Frau den Bauer getröstet?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,117,0,block3,NULL,PennController,118,_Header_,Start,1692960082402,102,255,1,6,D,Hat die Frau den Bauer getröstet?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,117,0,block3,NULL,PennController,118,_Trial_,Start,1692960082402,102,255,1,6,D,Hat die Frau den Bauer getröstet?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,117,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,4,1692960092672,102,255,1,6,D,Hat die Frau den Bauer getröstet?,manipulation,NULL,1988,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,117,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692960092672,102,255,1,6,D,Hat die Frau den Bauer getröstet?,manipulation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,117,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692960092674,102,255,1,6,D,Hat die Frau den Bauer getröstet?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,117,0,block3,NULL,Key,ComprehensionDecide,PressedKey,D,1692960094435,102,255,1,6,D,Hat die Frau den Bauer getröstet?,manipulation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,117,0,block3,NULL,PennController,118,_Trial_,End,1692960094438,102,255,1,6,D,Hat die Frau den Bauer getröstet?,manipulation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,118,0,block3,NULL,PennController,119,_Header_,End,1692960094441,31,153,1,6,D,Hat der Pfarrer den Ring übergeben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,118,0,block3,NULL,PennController,119,_Header_,Start,1692960094441,31,153,1,6,D,Hat der Pfarrer den Ring übergeben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,118,0,block3,NULL,PennController,119,_Trial_,Start,1692960094441,31,153,1,6,D,Hat der Pfarrer den Ring übergeben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,118,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,2,1692960107645,31,153,1,6,D,Hat der Pfarrer den Ring übergeben?,continuation,NULL,1083,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,118,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692960107645,31,153,1,6,D,Hat der Pfarrer den Ring übergeben?,continuation,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,118,0,block3,NULL,Canvas,ComprehensionQuestion,Print,NA,1692960107648,31,153,1,6,D,Hat der Pfarrer den Ring übergeben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,118,0,block3,NULL,Key,ComprehensionDecide,PressedKey,D,1692960109120,31,153,1,6,D,Hat der Pfarrer den Ring übergeben?,continuation,Wait success
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,118,0,block3,NULL,PennController,119,_Trial_,End,1692960109123,31,153,1,6,D,Hat der Pfarrer den Ring übergeben?,continuation,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,119,0,block3,NULL,PennController,120,_Header_,End,1692960109125,24,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,119,0,block3,NULL,PennController,120,_Header_,Start,1692960109125,24,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,119,0,block3,NULL,PennController,120,_Trial_,Start,1692960109125,24,151,1,6,,,,NULL
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,119,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,NULL,5,1692960123147,24,151,1,6,,,,NULL,1092,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,119,0,block3,NULL,Controller-AcceptabilityJudgment,block3_accept,,NULL,1692960123147,24,151,1,6,,,,Any addtional parameters were appended as additional columns
+1692960183,31c643783837d5a8b5428113da06f75a,PennController,119,0,block3,NULL,PennController,120,_Trial_,End,1692960123150,24,151,1,6,,,,NULL

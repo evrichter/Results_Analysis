@@ -8,11 +8,13 @@ library(data.table)
 library(gridExtra)
 library(dplyr)
 
-setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results_Analysis/")
+setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results/")
 source("ibex_fns.r")
 
+# exclude participants with low accuracy on comprehension questions
 excluded_participants <- c("ffdd30f484d223ac5999ce51deb40e33",
-                           "6b1c3b3f4a456ceb42f68dedb8f5b931")
+                           "6b1c3b3f4a456ceb42f68dedb8f5b931",
+                           "f2ea935ab3f48bf10da6c309500a7647")
 
 #### DATA FORMATTING
 # Get DEMOG CONSENT SURVEY data
@@ -60,25 +62,64 @@ agg_df$Subject <- as.factor(agg_df$Subject)
 agg_df[order(agg_df$ReactionTime),]
 agg_df[order(agg_df$Accuracy),]
 
+# calculate mean Accuracy
+mean_accuracy <- mean(agg_df$Accuracy, na.rm = TRUE)
+cat("Mean Accuracy:", mean_accuracy)
 
 # merge with assoc and cloze pretest values
 pretests <- fread("GradedP6_FollowUpStudy_Pretests.csv")
-df <- merge(df, pretests[,c("Item", "Condition", "Verb", "Target", "Distractor", "Last_Mentioned", "Cloze", "Cloze_distractor", "Cloze_C_alternative", "Plaus_target_avg", "Plaus_dist_avg", "Surprisal_target", "Surprisal_distractor")], by=c("Item", "Condition"))
+df <- merge(df, pretests[,c("Item", "Condition", "Verb", "Target", "Distractor", "Last_Mentioned", "Plaus_target_avg", "Plaus_dist_avg", "Surprisal_target", "Surprisal_distractor")], by=c("Item", "Condition"))
 
 # add precritRT as predictor
 df$precritRT <- rep(df[Region=="Pre-critical",]$ReadingTime, each=5)
 #change column order
 df <- df %>% relocate(precritRT, .before= ReadingTime)
 
+# calculate correlation coefficient between SPR_Plaus_avg and Plaus_target_avg
+correlation <- cor(df$SPR_Plaus_avg, df$Plaus_target_avg)
+cat("Correlation between SPR_Plaus_avg and Plaus_target_avg:", correlation)
+
 fwrite(df, "GP6SPR.csv")
 
+# Verb length per cond
+# df$ncharverb <- nchar(df$Verb)
+# aggregate(ncharverb ~ Condition, df, mean)
 
-#############################################################################################################################################
-# Plaus Data Viz for avg Plausratings from SPR Study
+# Remove too high or low reading times and reaction times
+df <- remove_outliers(df)
+
+fwrite(df, "GP6SPR_processed.csv")
+
+########## READ PROCESSED DATA
+
+setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results/")
+df_bal <- fread("GP6SPR.csv")
+df_bal <- df
+df_bal$Subject <- as.factor(df$Subject)
+
+# # data exclusion per region
+cutoff_in_sd = 4
+# # df_first <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "First",], sd_cutoff=cutoff_in_sd)
+# # df_second <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Second",], sd_cutoff=cutoff_in_sd)
+# # df_third <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Third",], sd_cutoff=cutoff_in_sd)
+# # df_fourth <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Fourth",], sd_cutoff=cutoff_in_sd)
+# # df_fifth <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Fifth",], sd_cutoff=cutoff_in_sd)
+# # df_sixth <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Sixth",], sd_cutoff=cutoff_in_sd)
+df_precrit_2 <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Pre-critical_2",], sd_cutoff=cutoff_in_sd)
+df_precrit <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Pre-critical",], sd_cutoff=cutoff_in_sd)
+df_crit <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Critical",], sd_cutoff=cutoff_in_sd)
+df_spill <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Spillover",], sd_cutoff=cutoff_in_sd)
+df_postspill <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Post-spillover",], sd_cutoff=cutoff_in_sd)
+
+
+
+# #### DATA VISUALISATION
+# Data Viz for avg Plausratings from SPR Study
 library(ggplot2)
 
-setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results_Analysis/")
-dt <- fread("GP6SPR.csv")
+setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results/")
+dt <- fread("GP6SPR_processed.csv")
+
 
 means <- aggregate(SPR_Plaus_avg ~ Condition, dt, FUN=mean)
 means$Plaus_SE <- aggregate(SPR_Plaus_avg ~ Condition, dt, FUN=se)$SPR_Plaus_avg
@@ -97,33 +138,8 @@ p
 q <- ggplot(means, aes(x=Condition, y=SPR_Plaus_avg)) + geom_bar(stat="identity") + labs(title = "Average Plausibility Ratings per Condition (SPR)", y = "Plausibility",  x = "Condition") + geom_errorbar(aes(ymin=SPR_Plaus_avg-Plaus_SE, ymax=SPR_Plaus_avg+Plaus_SE), width=.4, position=position_dodge(.9)) + theme_minimal() + coord_cartesian(ylim = c(1, 7)) + scale_y_continuous(breaks = c(1:7))
 ggsave("BarPlot_Plausibility_SPR.pdf", q, device=cairo_pdf, width=4, height=4)
 q
-#############################################################################################################################################
-#fwrite(df, "lmerSPR/data/GP6SPR.csv")
-# Verb length per cond
-# df$ncharverb <- nchar(df$Verb)
-# aggregate(ncharverb ~ Condition, df, mean)
 
-# ########## READ PROCESSED DATA
-# setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results_Analysis/")
-# df_bal <- fread("Exp4_SPR.csv")
-# df_bal$Subject <- as.factor(df_bal$Subject)
-
-# # data exclusion per region
-# cutoff_in_sd = 4
-# # df_first <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "First",], sd_cutoff=cutoff_in_sd)
-# # df_second <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Second",], sd_cutoff=cutoff_in_sd)
-# # df_third <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Third",], sd_cutoff=cutoff_in_sd)
-# # df_fourth <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Fourth",], sd_cutoff=cutoff_in_sd)
-# # df_fifth <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Fifth",], sd_cutoff=cutoff_in_sd)
-# # df_sixth <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Sixth",], sd_cutoff=cutoff_in_sd)
-# # df_precrit_2 <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Pre-critical_2",], sd_cutoff=cutoff_in_sd)
-# # df_precrit <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Pre-critical",], sd_cutoff=cutoff_in_sd)
-# # df_crit <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Critical",], sd_cutoff=cutoff_in_sd)
-# # df_spill <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Spillover",], sd_cutoff=cutoff_in_sd)
-# # df_postspill <- exclude(df_bal[ReadingTime > 100 & ReadingTime < 2500 & Region == "Post-spillover",], sd_cutoff=cutoff_in_sd)
-
-# #### DATA VISUALISATION
-
+###
 # ## Per Condition RTs per region
 # #df_bal_excl <- rbind(df_first, df_second, df_third, df_fourth, df_fifth, df_sixth)
 # #df_bal_excl <- rbind(df_precrit_2, df_precrit, df_crit, df_spill, df_postspill)
