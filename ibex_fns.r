@@ -1,5 +1,10 @@
 setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results/")
 
+# exclude participants with low accuracy on comprehension questions
+excluded_participants <- c("ffdd30f484d223ac5999ce51deb40e33",
+                           "6b1c3b3f4a456ceb42f68dedb8f5b931",
+                           "f2ea935ab3f48bf10da6c309500a7647")
+
 #### FUNCTIONS
 get_reacts <- function(
     reac_path
@@ -13,6 +18,8 @@ get_reacts <- function(
     colnames(dt) <- c("timeReceipt", "IPhash", "Controller", "IbexItemNum", "IbexElementNum", "Block", "Group", 
                     "PennElType", "PennElName", "Header", "PressedKey", "EventTime", "Item", "CondCode",
                     "List", "Critical", "CorrectKey", "QuestionText", "QuestionCondition", "Comments", "New1", "New2")
+    
+    dt <- dt[!(IPhash %in% excluded_participants),]
     
     # Compute reaction times, selecting on IP x Item
     reaction_times <- dt[seq(2, nrow(dt), 2),]$EventTime - dt[seq(1, nrow(dt) - 1, 2),]$EventTime
@@ -44,10 +51,13 @@ get_reads <- function(
 ) {
     # read in read.txt and compute RTs from it
     dt <- fread(filepath,header=FALSE)
+    
     colnames(dt) <- c("timeReceipt", "IPhash", "Controller", "IbexItemNum", "IbexElementNum", "Block", "Group", 
                     "PennElType", "PennElName", "WordNum", "Word", "EventTime", "Item", "CondCode",
                     "List", "Critical", "Correct", "QuestionText", "QuestionCondition", "ReadingTime", "Newline", "Sentence", "Comments")
 
+    dt <- dt[!(IPhash %in% excluded_participants),] 
+    
     dt[,c("Controller", "IbexElementNum", "Group", "PennElType", "PennElName", "Newline", "Comments", "List")] <- NULL
     
     # Add column for trial number (per subject)
@@ -88,7 +98,9 @@ get_demog <- function(
     dt <- fread(demogpath)
     colnames(dt) <- c("timeReceipt", "IPhash", "Controller", "IbexItemNum", "Type", "Group", 
                     "PennElType", "Controller2", "PennElName", "Parameter", "Value", "EventTime", "survey", "Comments")
-
+    
+    dt <- dt[!(IPhash %in% excluded_participants),] 
+    
     # remove trial start entries
     dt <- dt[Parameter != "_Trial_"]
     dt <- dt[Parameter != "_Header_"]
@@ -105,6 +117,8 @@ get_consent <- function(
     dt <- fread(consentpath)
     colnames(dt) <- c("timeReceipt", "IPhash", "Controller", "IbexItemNum", "Type", "Group", 
                     "PennElType", "Controller2", "PennElName", "Parameter", "Value", "EventTime", "survey", "Comments")
+    
+    dt <- dt[!(IPhash %in% excluded_participants),]
 
     # remove trial start entries
     dt <- dt[Parameter != "_Trial_"]
@@ -121,6 +135,8 @@ get_survey <- function(
     dt <- fread(surveypath)
     colnames(dt) <- c("timeReceipt", "IPhash", "Controller", "IbexItemNum", "Type", "Group", 
                     "PennElType", "Controller2", "PennElName", "Parameter", "Value", "EventTime", "survey", "Comments")
+    
+    dt <- dt[!(IPhash %in% excluded_participants),] 
 
     # remove trial start entries
     dt <- dt[Parameter != "_Trial_"]
@@ -208,6 +224,8 @@ get_plausibility_rating <- function(
                                        "List", "Critical", "CorrectKey", "QuestionText", "QuestionCondition", "Comments",
                                        "RatingTime", "Comments2")
     
+    plausibility_rating <- plausibility_rating[!(IPhash %in% excluded_participants),]
+    
     plausibility_rating <- plausibility_rating[!(CondCode>250),]
     
     plausibility_rating$Condition <- ifelse(plausibility_rating$CondCode == 151, "A", ifelse(plausibility_rating$CondCode == 152, "B", ifelse(plausibility_rating$CondCode == 153, "C", "UNKNOWN")))
@@ -244,7 +262,7 @@ calculate_avg_plausibility_rating <- function(
       plausibility_rating$SPR_Plaus_avg[cond] <- SPR_Plaus_avg
     }
     
-    print(paste("Average plausibility rating for condition ", condition, " : ", avg_plausrating_per_condition))
+    #print(paste("Average plausibility rating for condition ", condition, " : ", avg_plausrating_per_condition))
   }
   
   plausibility_rating
