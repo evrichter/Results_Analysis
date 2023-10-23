@@ -11,13 +11,14 @@ residuals <- data.frame(
   Region = character(0),
   Condition = character(0),
   Residual = numeric(0),
-  SE = numeric(0)
+  SE_Residual = numeric(0)
 )
 
 logRT_estimated <- data.frame(
   Region = character(0),
   Condition = character(0),
-  Estimated_logRT <- numeric(0)
+  Estimated_logRT = numeric(0),
+  SE_Estimated = numeric(0)
 )
 
 regions <- c("Pre-critical", "Critical", "Spillover", "Post-spillover") 
@@ -66,14 +67,16 @@ for (region in regions)
     region_per_condition_logRT_estimated
     
     # calculate standard error for residuals
-    region_per_condition$SE <- sd(region_per_condition$logRT, na.rm = TRUE) / sqrt(nrow(region_per_condition))
+    SE_residuals_region_per_condition <- sqrt(sd(region_per_condition$logRT, na.rm = TRUE)^2/length(region_per_condition$logRT) + sd(region_per_condition$region_per_condition_Predicted, na.rm = TRUE)^2/length(region_per_condition$region_per_condition_Predicted))
     
-    new_row_residuals <- data.frame(Region = region, Condition = condition, Residual = Residual_region_per_condition, SE = mean(region_per_condition$SE))
+    new_row_residuals <- data.frame(Region = region, Condition = condition, Residual = Residual_region_per_condition, SE_Residual = SE_residuals_region_per_condition)
     residuals <- rbind(residuals, new_row_residuals)
     
     # calculate standard error for logRT estimated
     ##
-    new_row_logRT_estimated <- data.frame(Region = region, Condition = condition, Estimated_logRT = region_per_condition_logRT_estimated)
+    SE_estimated_region_per_condition <- sd(region_per_condition$region_per_condition_Predicted, na.rm = TRUE) / sqrt(length(region_per_condition$region_per_condition_Predicted)) 
+    
+    new_row_logRT_estimated <- data.frame(Region = region, Condition = condition, Estimated_logRT = region_per_condition_logRT_estimated, SE_Estimated = SE_estimated_region_per_condition)
     logRT_estimated <- rbind(logRT_estimated, new_row_logRT_estimated)
   }
 }
@@ -82,7 +85,7 @@ for (region in regions)
 # Create a line plot 
 p <- ggplot(residuals, aes(x = factor(Region, levels = c("Pre-critical", "Critical", "Spillover", "Post-spillover")), 
                            y = Residual, color = Condition, group = Condition)) + geom_point(shape = 4, size = 3.5, stroke = 0.4) + geom_line(linewidth=0.5) + ylim (0.10, -0.10)
-p <- p + theme_minimal() + geom_errorbar(aes(ymin=Residual-SE, ymax=Residual+SE), width=.1, size=0.3) 
+p <- p + theme_minimal() + geom_errorbar(aes(ymin=Residual-SE_Residual, ymax=Residual+SE_Residual), width=.1, size=0.3) 
 p <- p + scale_color_manual(name="Condition", labels=c("A: Plausible", "B: Medium Plausible", "C: Implausible"), values=c("#000000", "#FF0000", "#0000FF"))
 p <- p + labs(x="Region", y="logRT", title = "Residuals: Plausibility Target + Surprisal Distractor") 
 p <- p + theme(legend.position="bottom", legend.text=element_text(size=7), legend.title=element_text(size=7), axis.title.x = element_text(size = 14), axis.title.y = element_text(size = 14)) 
