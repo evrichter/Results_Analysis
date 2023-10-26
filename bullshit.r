@@ -23,8 +23,6 @@ logRT_estimated <- data.frame(
 
 
 
-
-
 ##### PRE-CRITICAL #####
 # Precritical region
 Precritical <- subset(GP6, Region == "Pre-critical")
@@ -76,60 +74,6 @@ logRT_estimated <- rbind(logRT_estimated, new_row_logRT_estimated)
 
 
 
-####predict condition B, precritical#####
-Precritical_B <- subset(Precritical, Condition == "B")
-Precritical_B$Precritical_B_Predicted <- predict(model_Precritical, newdata = Precritical_B,  type = "response")
-
-# calculate residuals
-Residual_Precritical_B <- mean(Precritical_B$logRT_Precritical) - mean(Precritical_B$Precritical_B_Predicted)
-Residual_Precritical_B
-Precrit_B_logRT_observed <- mean(Precritical_B$logRT_Precritical)
-Precrit_B_logRT_observed
-Precrit_B_logRT_estimated <- mean(Precritical_B$Precritical_B_Predicted)
-Precrit_B_logRT_estimated
-
-# calculate standard error for residuals
-SE_Res_Precrit_B <- sqrt(sd(Precritical_B$logRT, na.rm = TRUE)^2/length(Precritical_B$logRT) + sd(Precritical_B$Precritical_B_Predicted, na.rm = TRUE)^2/length(Precritical_B$Precritical_B_Predicted))
-SE_Res_Precrit_B
-new_row_residuals <- data.frame(Region = 'Pre-critical', Condition = "B", Residual = Residual_Precritical_B, SE_Residual = SE_Res_Precrit_B)
-residuals <- rbind(residuals, new_row_residuals)
-
-# calculate standard error for logRT estimated
-SE_est_Precrit_B <- sd(Precritical_B$Precritical_B_Predicted, na.rm = TRUE) / sqrt(length(Precritical_B$Precritical_B_Predicted)) 
-SE_est_Precrit_B
-new_row_logRT_estimated <- data.frame(Region = 'Pre-critical', Condition = "B", Estimated_logRT = Precrit_B_logRT_estimated, SE_Estimated = SE_est_Precrit_B)
-logRT_estimated <- rbind(logRT_estimated, new_row_logRT_estimated)
-
-
-
-#####predict condition C, precritical#####
-Precritical_C <- subset(Precritical, Condition == "C")
-Precritical_C$Precritical_C_Predicted <- predict(model_Precritical, newdata = Precritical_C,  type = "response")
-
-# calculate residuals
-Residual_Precritical_C <- mean(Precritical_C$logRT_Precritical) - mean(Precritical_C$Precritical_C_Predicted)
-Residual_Precritical_C
-Precrit_C_logRT_observed <- mean(Precritical_C$logRT_Precritical) 
-Precrit_C_logRT_observed
-Precrit_C_logRT_estimated <- mean(Precritical_C$Precritical_C_Predicted)
-Precrit_C_logRT_estimated
-
-# calculate standard error for residuals
-SE_Res_Precrit_C <- sqrt(sd(Precritical_C$logRT, na.rm = TRUE)^2/length(Precritical_C$logRT) + sd(Precritical_C$Precritical_C_Predicted, na.rm = TRUE)^2/length(Precritical_C$Precritical_C_Predicted))
-SE_Res_Precrit_C
-new_row_residuals <- data.frame(Region = 'Pre-critical', Condition = "C", Residual = Residual_Precritical_C, SE_Residual = SE_Res_Precrit_C)
-residuals <- rbind(residuals, new_row_residuals)
-
-# calculate standard error for logRT estimated
-SE_est_Precrit_C <- sd(Precritical_C$Precritical_C_Predicted, na.rm = TRUE) / sqrt(length(Precritical_C$Precritical_C_Predicted)) 
-SE_est_Precrit_C
-new_row_logRT_estimated <- data.frame(Region = 'Pre-critical', Condition = "C", Estimated_logRT = Precrit_C_logRT_estimated, SE_Estimated = SE_est_Precrit_C)
-logRT_estimated <- rbind(logRT_estimated, new_row_logRT_estimated)
-
-
-
-
-
 ##### CRITICAL #####
 # critical region
 Critical <- subset(GP6, Region == "Critical")
@@ -143,8 +87,8 @@ Critical$logRT_Critical <- log(Critical$ReadingTime)
 
 # define and run the linear mixed-effects regression model for the Critical region 
 model_Critical <- lmer(logRT_Critical ~ inverted_scaled_Plaus_Critical + scaled_Surprisaldist_Critical + 
-                            (1 + inverted_scaled_Plaus_Critical + scaled_Surprisaldist_Critical | Subject) + 
-                            (1 + inverted_scaled_Plaus_Critical + scaled_Surprisaldist_Critical | Item), data = Critical)
+                         (1 + inverted_scaled_Plaus_Critical + scaled_Surprisaldist_Critical | Subject) + 
+                         (1 + inverted_scaled_Plaus_Critical + scaled_Surprisaldist_Critical | Item), data = Critical)
 
 # print the summary of the model
 summary_Critical <- summary(model_Critical)
@@ -163,7 +107,6 @@ Critical_A_logRT_observed
 Critical_A_logRT_estimated <- mean(Critical_A$Critical_A_Predicted)
 Critical_A_logRT_estimated
 
-
 # calculate standard error for residuals
 SE_Res_Crit_A <- sqrt(sd(Critical_A$logRT, na.rm = TRUE)^2/length(Critical_A$logRT) + sd(Critical_A$Critical_A_Predicted, na.rm = TRUE)^2/length(Critical_A$Critical_A_Predicted))
 SE_Res_Crit_A
@@ -175,58 +118,6 @@ SE_est_Crit_A <- sd(Critical_A$Critical_A_Predicted, na.rm = TRUE) / sqrt(length
 SE_est_Crit_A
 new_row_logRT_estimated <- data.frame(Region = 'Critical', Condition = "A", Estimated_logRT = Critical_A_logRT_estimated, SE_Estimated = SE_est_Crit_A)
 logRT_estimated <- rbind(logRT_estimated, new_row_logRT_estimated)
-
-
-#####predict condition B, Critical#####
-Critical_B <- subset(Critical, Condition == "B")
-Critical_B$Critical_B_Predicted <- predict(model_Critical, newdata = Critical_B,  type = "response")
-
-# calculate residualds
-Residual_Critical_B <- mean(Critical_B$logRT_Critical) - mean(Critical_B$Critical_B_Predicted)
-Residual_Critical_B
-Critical_B_logRT_observed <- mean(Critical_B$logRT_Critical)
-Critical_B_logRT_observed
-Critical_B_logRT_estimated <- mean(Critical_B$Critical_B_Predicted)
-Critical_B_logRT_estimated
-
-# calculate standard error for residuals
-SE_Res_Crit_B <- sqrt(sd(Critical_B$logRT, na.rm = TRUE)^2/length(Critical_B$logRT) + sd(Critical_B$Critical_B_Predicted, na.rm = TRUE)^2/length(Critical_B$Critical_B_Predicted))
-SE_Res_Crit_B
-new_row_residuals <- data.frame(Region = 'Critical', Condition = "B", Residual = Residual_Critical_B, SE_Residual = SE_Res_Crit_B)
-residuals <- rbind(residuals, new_row_residuals)
-
-# calculate standard error for logRT estimated
-SE_est_Crit_B <- sd(Critical_B$Critical_B_Predicted, na.rm = TRUE) / sqrt(length(Critical_B$Critical_B_Predicted)) 
-SE_est_Crit_B
-new_row_logRT_estimated <- data.frame(Region = 'Critical', Condition = "B", Estimated_logRT = Critical_B_logRT_estimated, SE_Estimated = SE_est_Crit_B)
-logRT_estimated <- rbind(logRT_estimated, new_row_logRT_estimated)
-
-
-
-#####predict condition C, Critical#####
-Critical_C <- subset(Critical, Condition == "C")
-Critical_C$Critical_C_Predicted <- predict(model_Critical, newdata = Critical_C,  type = "response")
-
-# calculate residuals
-Residual_Critical_C <- mean(Critical_C$logRT_Critical) - mean(Critical_C$Critical_C_Predicted)
-Residual_Critical_C
-Critical_C_logRT_observed <- mean(Critical_C$logRT_Critical)
-Critical_C_logRT_observed
-Critical_C_logRT_estimated <- mean(Critical_C$Critical_C_Predicted)
-Critical_C_logRT_estimated
-
-# calculate standard error for residuals
-SE_Res_Crit_C <- sqrt(sd(Critical_C$logRT, na.rm = TRUE)^2/length(Critical_C$logRT) + sd(Critical_C$Critical_C_Predicted, na.rm = TRUE)^2/length(Critical_C$Critical_C_Predicted))
-SE_Res_Crit_C
-new_row_residuals <- data.frame(Region = 'Critical', Condition = "C", Residual = Residual_Critical_C, SE_Residual = SE_Res_Crit_C)
-residuals <- rbind(residuals, new_row_residuals)
-
-# calculate standard error for logRT estimated
-SE_est_Crit_C <- sd(Critical_C$Critical_C_Predicted, na.rm = TRUE) / sqrt(length(Critical_C$Critical_C_Predicted)) 
-SE_est_Crit_C
-new_row_logRT_estimated <- data.frame(Region = 'Critical', Condition = "C", Estimated_logRT = Critical_C_logRT_estimated, SE_Estimated = SE_est_Crit_C)
-logRT_estimated <- rbind(logRT_estimated, new_row_logRT_estimated)
-
 
 
 
@@ -243,13 +134,12 @@ Spillover$logRT_Spillover <- log(Spillover$ReadingTime)
 
 # define and run the linear mixed-effects regression model for the Spillover region 
 model_Spillover <- lmer(logRT_Spillover ~ inverted_scaled_Plaus_Spillover + scaled_Surprisaldist_Spillover + 
-                         (1 + inverted_scaled_Plaus_Spillover + scaled_Surprisaldist_Spillover | Subject) + 
-                         (1 + inverted_scaled_Plaus_Spillover + scaled_Surprisaldist_Spillover | Item), data = Spillover)
+                          (1 + inverted_scaled_Plaus_Spillover + scaled_Surprisaldist_Spillover | Subject) + 
+                          (1 + inverted_scaled_Plaus_Spillover + scaled_Surprisaldist_Spillover | Item), data = Spillover)
 
 # print the summary of the model
 summary_Spillover <- summary(model_Spillover)
 summary_Spillover
-
 
 
 #####predict condition A, Spillover#####
@@ -278,57 +168,6 @@ logRT_estimated <- rbind(logRT_estimated, new_row_logRT_estimated)
 
 
 
-#####predict condition B, Spillover#####
-Spillover_B <- subset(Spillover, Condition == "B")
-Spillover_B$Spillover_B_Predicted <- predict(model_Spillover, newdata = Spillover_B,  type = "response")
-
-# calculate residuals
-Residual_Spillover_B <- mean(Spillover_B$logRT_Spillover) - mean(Spillover_B$Spillover_B_Predicted)
-Residual_Spillover_B
-Spillover_B_logRT_observed <- mean(Spillover_B$logRT_Spillover)
-Spillover_B_logRT_observed
-Spillover_B_logRT_estimated <- mean(Spillover_B$Spillover_B_Predicted)
-Spillover_B_logRT_estimated
-
-# calculate standard error for residuals
-SE_Res_Spill_B <- sqrt(sd(Spillover_B$logRT, na.rm = TRUE)^2/length(Spillover_B$logRT) + sd(Spillover_B$Spillover_B_Predicted, na.rm = TRUE)^2/length(Spillover_B$Spillover_B_Predicted))
-SE_Res_Spill_B
-new_row_residuals <- data.frame(Region = 'Spillover', Condition = "B", Residual = Residual_Spillover_B, SE_Residual = SE_Res_Spill_B)
-residuals <- rbind(residuals, new_row_residuals)
-
-# calculate standard error for logRT estimated
-SE_est_Spill_B <- sd(Spillover_B$Spillover_B_Predicted, na.rm = TRUE) / sqrt(length(Spillover_B$Spillover_B_Predicted)) 
-SE_est_Spill_B
-new_row_logRT_estimated <- data.frame(Region = 'Spillover', Condition = "B", Estimated_logRT = Spillover_B_logRT_estimated, SE_Estimated = SE_est_Spill_B)
-logRT_estimated <- rbind(logRT_estimated, new_row_logRT_estimated)
-
-
-
-#####predict condition C, Spillover#####
-Spillover_C <- subset(Spillover, Condition == "C")
-Spillover_C$Spillover_C_Predicted <- predict(model_Spillover, newdata = Spillover_C,  type = "response")
-
-# calculate residuals
-Residual_Spillover_C <- mean(Spillover_C$logRT_Spillover) - mean(Spillover_C$Spillover_C_Predicted)
-Residual_Spillover_C
-Spillover_C_logRT_observed <- mean(Spillover_C$logRT_Spillover)
-Spillover_C_logRT_observed
-Spillover_C_logRT_estimated <- mean(Spillover_C$Spillover_C_Predicted)
-Spillover_C_logRT_estimated
-
-# calculate standard error for residuals
-SE_Res_Spill_C <- sqrt(sd(Spillover_C$logRT, na.rm = TRUE)^2/length(Spillover_C$logRT) + sd(Spillover_C$Spillover_C_Predicted, na.rm = TRUE)^2/length(Spillover_C$Spillover_C_Predicted))
-SE_Res_Spill_C
-new_row_residuals <- data.frame(Region = 'Spillover', Condition = "C", Residual = Residual_Spillover_C, SE_Residual = SE_Res_Spill_C)
-residuals <- rbind(residuals, new_row_residuals)
-
-# calculate standard error for logRT estimated
-SE_est_Spill_C <- sd(Spillover_C$Spillover_C_Predicted, na.rm = TRUE) / sqrt(length(Spillover_C$Spillover_C_Predicted)) 
-SE_est_Spill_C
-new_row_logRT_estimated <- data.frame(Region = 'Spillover', Condition = "C", Estimated_logRT = Spillover_C_logRT_estimated, SE_Estimated = SE_est_Spill_C)
-logRT_estimated <- rbind(logRT_estimated, new_row_logRT_estimated)
-
-
 
 
 
@@ -345,8 +184,8 @@ Postspillover$logRT_Postspillover <- log(Postspillover$ReadingTime)
 
 # define and run the linear mixed-effects regression model for the Postspillover region 
 model_Postspillover <- lmer(logRT_Postspillover ~ inverted_scaled_Plaus_Postspillover + scaled_Surprisaldist_Postspillover + 
-                          (1 + inverted_scaled_Plaus_Postspillover + scaled_Surprisaldist_Postspillover | Subject) + 
-                          (1 + inverted_scaled_Plaus_Postspillover + scaled_Surprisaldist_Postspillover | Item), data = Postspillover)
+                              (1 + inverted_scaled_Plaus_Postspillover + scaled_Surprisaldist_Postspillover | Subject) + 
+                              (1 + inverted_scaled_Plaus_Postspillover + scaled_Surprisaldist_Postspillover | Item), data = Postspillover)
 
 # print the summary of the model
 summary_Postspillover <- summary(model_Postspillover)
@@ -377,62 +216,10 @@ new_row_logRT_estimated <- data.frame(Region = 'Post-Spillover', Condition = "A"
 logRT_estimated <- rbind(logRT_estimated, new_row_logRT_estimated)
 
 
-
-#####predict condition B, Postspillover#####
-Postspillover_B <- subset(Postspillover, Condition == "B")
-Postspillover_B$Postspillover_B_Predicted <- predict(model_Postspillover, newdata = Postspillover_B,  type = "response")
-
-# calculate residuals
-Residual_Postspillover_B <- mean(Postspillover_B$logRT_Postspillover) - mean(Postspillover_B$Postspillover_B_Predicted)
-Residual_Postspillover_B
-Postspillover_B_logRT_observed <- mean(Postspillover_B$logRT_Postspillover) 
-Postspillover_B_logRT_observed
-Postspillover_B_logRT_estimated <- mean(Postspillover_B$Postspillover_B_Predicted)
-Postspillover_B_logRT_estimated
-
-# calculate standard error for residuals
-SE_Res_PostSpill_B <- sqrt(sd(Postspillover_B$logRT, na.rm = TRUE)^2/length(Postspillover_B$logRT) + sd(Postspillover_B$Postspillover_B_Predicted, na.rm = TRUE)^2/length(Postspillover_B$Postspillover_B_Predicted))
-SE_Res_PostSpill_B
-new_row_residuals <- data.frame(Region = 'Post-Spillover', Condition = "B", Residual = Residual_Postspillover_B, SE_Residual = SE_Res_PostSpill_B)
-residuals <- rbind(residuals, new_row_residuals)
-
-# calculate standard error for logRT estimated
-SE_est_PostSpill_B <- sd(Postspillover_B$Postspillover_B_Predicted, na.rm = TRUE) / sqrt(length(Postspillover_B$Postspillover_B_Predicted)) 
-SE_est_PostSpill_B
-new_row_logRT_estimated <- data.frame(Region = 'Post-Spillover', Condition = "B", Estimated_logRT = Postspillover_B_logRT_estimated, SE_Estimated = SE_est_PostSpill_B)
-logRT_estimated <- rbind(logRT_estimated, new_row_logRT_estimated)
-
-
-
-#####predict condition C, Postspillover#####
-Postspillover_C <- subset(Postspillover, Condition == "C")
-Postspillover_C$Postspillover_C_Predicted <- predict(model_Postspillover, newdata = Postspillover_C,  type = "response")
-
-# calculate residuals
-Residual_Postspillover_C <- mean(Postspillover_C$logRT_Postspillover) - mean(Postspillover_C$Postspillover_C_Predicted)
-Residual_Postspillover_C
-Postspillover_C_logRT_observed <- mean(Postspillover_C$logRT_Postspillover)
-Postspillover_C_logRT_observed
-Postspillover_C_logRT_estimated <- mean(Postspillover_C$Postspillover_C_Predicted)
-Postspillover_C_logRT_estimated
-
-# calculate standard error for residuals
-SE_Res_PostSpill_C <- sqrt(sd(Postspillover_C$logRT, na.rm = TRUE)^2/length(Postspillover_C$logRT) + sd(Postspillover_C$Postspillover_C_Predicted, na.rm = TRUE)^2/length(Postspillover_C$Postspillover_C_Predicted))
-SE_Res_PostSpill_C
-new_row_residuals <- data.frame(Region = 'Post-Spillover', Condition = "C", Residual = Residual_Postspillover_C, SE_Residual = SE_Res_PostSpill_C)
-residuals <- rbind(residuals, new_row_residuals)
-
-# calculate standard error for logRT estimated
-SE_est_PostSpill_C <- sd(Postspillover_C$Postspillover_C_Predicted, na.rm = TRUE) / sqrt(length(Postspillover_C$Postspillover_C_Predicted)) 
-SE_est_PostSpill_C
-new_row_logRT_estimated <- data.frame(Region = 'Post-Spillover', Condition = "C", Estimated_logRT = Postspillover_C_logRT_estimated, SE_Estimated = SE_est_PostSpill_C)
-logRT_estimated <- rbind(logRT_estimated, new_row_logRT_estimated)
-
-
 # plot residuals
 # Create a line plot 
 p <- ggplot(residuals, aes(x = factor(Region, levels = c("Pre-critical", "Critical", "Spillover", "Post-spillover")), 
-                          y = Residual, color = Condition, group = Condition)) + geom_point(shape = 4, size = 3.5, stroke = 0.4) + geom_line(linewidth=0.5) + ylim (0.10, -0.10)
+                           y = Residual, color = Condition, group = Condition)) + geom_point(shape = 4, size = 3.5, stroke = 0.4) + geom_line(linewidth=0.5) + ylim (0.10, -0.10)
 p <- p + theme_minimal() + geom_errorbar(aes(ymin=Residual-SE_Residual, ymax=Residual+SE_Residual), width=.1, size=0.3) 
 p <- p + scale_color_manual(name="Condition", labels=c("A: Plausible", "B: Medium Plausible", "C: Implausible"), values=c("#000000", "#FF0000", "#0000FF"))
 p <- p + labs(x="Region", y="logRT", title = "Residuals: Plausibility Target + Surprisal Distractor") 
@@ -444,7 +231,7 @@ ggsave("Residuals_Plot.pdf", p, width=4, height=4)
 # plot estimated logRTs
 # Create a line plot 
 p <- ggplot(logRT_estimated, aes(x = factor(Region, levels = c("Pre-critical", "Critical", "Spillover", "Post-spillover")), 
-                           y = Estimated_logRT, color = Condition, group = Condition)) + geom_point(shape = 4, size = 3.5, stroke = 0.4) + geom_line(linewidth=0.5) + ylim (5.5, 5.7)
+                                 y = Estimated_logRT, color = Condition, group = Condition)) + geom_point(shape = 4, size = 3.5, stroke = 0.4) + geom_line(linewidth=0.5) + ylim (5.5, 5.7)
 p <- p + theme_minimal() + geom_errorbar(aes(ymin=Estimated_logRT-SE_Estimated, ymax=Estimated_logRT+SE_Estimated), width=.1, size=0.3) 
 p <- p + scale_color_manual(name="Condition", labels=c("A: Plausible", "B: Medium Plausible", "C: Implausible"), values=c("#000000", "#FF0000", "#0000FF"))
 p <- p + labs(x="Region", y="logRT", title = "Estimated RTs") 

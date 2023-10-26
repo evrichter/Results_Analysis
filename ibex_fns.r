@@ -41,8 +41,6 @@ get_reacts <- function(
     # Drop unnneeded columns
     dt <- dt[,c("timeReceipt", "IPhash", "Controller", "Block", "PressedKey", "CorrectKey", "Item", "Condition", "List", "Critical", "QuestionText", "QuestionCondition", "ReactionTime", "Accuracy",  "New1", "New2")]  
     
-    dt <- dt[!(IPhash %in% c("c6c58a4e2da5ed0040e8e1fbcf513083")),]
-
     dt
 }
 
@@ -87,8 +85,6 @@ get_reads <- function(
 
     dt <- dt[Region != "noncritical"]
 
-    dt <- dt[!(IPhash %in% c("c6c58a4e2da5ed0040e8e1fbcf513083")),]
-
     dt
 }
 
@@ -107,7 +103,6 @@ get_demog <- function(
 
     df <- dcast(dt, IPhash ~ Parameter, value.var="Value")
 
-    df <- df[!(IPhash %in% c("c6c58a4e2da5ed0040e8e1fbcf513083")),]
     df
 }
 
@@ -125,7 +120,6 @@ get_consent <- function(
     dt <- dt[Parameter != "_Header_"]
 
     df <- dcast(dt, IPhash ~ Parameter, value.var="Value")
-    df <- df[!(IPhash %in% c("c6c58a4e2da5ed0040e8e1fbcf513083")),]
     df
 }
 
@@ -143,7 +137,6 @@ get_survey <- function(
     dt <- dt[Parameter != "_Header_"]
 
     df <- dcast(dt, IPhash ~ Parameter, value.var="Value")
-    df <- df[!(IPhash %in% c("c6c58a4e2da5ed0040e8e1fbcf513083")),]
     df
 }
 
@@ -180,7 +173,7 @@ remove_outliers <- function(
     df
 )
 {
-    n <- nrow(df)
+    n_total <- as.numeric(nrow(df) / 5)
   
     reading_time_outliers <- df[ReadingTime < 50 | ReadingTime > 2500]
     reaction_time_outliers <- df[ReactionTime < 50 | ReactionTime > 10000]
@@ -204,9 +197,10 @@ remove_outliers <- function(
       
       df <- df[!(Item == trial_item & Condition == trial_condition & Subject == trial_subject)]
     }
+    n_after_exclusion <- as.numeric(nrow(df) / 5)
     
-    percent_excluded <- ((n - nrow(df)) / nrow(df) * 100)
-    print(paste("Excluded" , round(percent_excluded,2), "% of data based on reading times and reaction times."))
+    percent_excluded <- (n_total - n_after_exclusion) / n_total * 100
+    print(paste((n_total - n_after_exclusion) , " out of ", n_total, " trials were excluded (", round(percent_excluded,2), "% of data based on reading times and reaction times were excluded)"))
     
     df
 }
