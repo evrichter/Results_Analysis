@@ -2,27 +2,34 @@
 # load lme4 package
 library(lme4)
 library(dplyr)
+library(ggplot2)
+library(lmerTest)
 
 setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results/")
 GP6 <- read.csv("GP6SPR_processed.csv")
 
 
 residuals <- data.frame(
-  Region = character(0),
-  Condition = character(0),
-  Residual = numeric(0),
-  SE_Residual = numeric(0)
+  Region <- character(0),
+  Condition <- character(0),
+  Residual <- numeric(0),
+  SE_Residual <- numeric(0)
 )
 
 logRT_estimated <- data.frame(
-  Region = character(0),
-  Condition = character(0),
+  Region <- character(0),
+  Condition <- character(0),
   Estimated_logRT <- numeric(0),
-  SE_Estimated = numeric(0)
+  SE_Estimated <- numeric(0)
 )
 
 
-
+SPR_coefficients <- data.frame(
+  Region <- character(0),
+  Intercept <- numeric(0),
+  Plausibility <- numeric(0),
+  Surprisal <- numeric(0)
+)
 
 
 ##### PRE-CRITICAL #####
@@ -36,17 +43,25 @@ Precritical$inverted_scaled_Plaus_Precritical <- (Precritical$scaled_Plaus_Precr
 #log transform reading times
 Precritical$logRT_Precritical <- log(Precritical$ReadingTime)
 
+
+
 # define and run the linear mixed-effects regression model for the precritical region 
-model_Precritical <- lmer(logRT_Precritical ~ inverted_scaled_Plaus_Precritical + scaled_Surprisaldist_Precritical + 
-                            (1 + inverted_scaled_Plaus_Precritical + scaled_Surprisaldist_Precritical | Subject) + 
-                            (1 + inverted_scaled_Plaus_Precritical + scaled_Surprisaldist_Precritical | Item), data = Precritical)
+model_Precritical <- lmerTest::lmer(logRT_Precritical ~ inverted_scaled_Plaus_Precritical + scaled_Surprisaldist_Precritical + 
+                                  (1 + inverted_scaled_Plaus_Precritical + scaled_Surprisaldist_Precritical | Subject) + 
+                                  (1 + inverted_scaled_Plaus_Precritical + scaled_Surprisaldist_Precritical | Item), data = Precritical)
 
 # print the summary of the model
 summary_Precritical <- summary(model_Precritical)
-summary_Precritical
+print(summary_Precritical)
 
+coefficients_Precritical <- summary_Precritical$coefficients
 
-
+intercept <- coefficients_Precritical["(Intercept)", 1]
+plaus_target_coeff <- coefficients_Precritical["(Intercept)", 1] + coefficients_Precritical["inverted_scaled_Plaus_Precritical", 1]
+surprisal_distractor_coeff <- coefficients_Precritical["(Intercept)", 1] + coefficients_Precritical["scaled_Surprisaldist_Precritical", 1]
+fixed_effect_coeff
+inverted_effect_coeff
+scaled_effect_coeff
 #####predict condition A, precritical#####
 Precritical_A <- subset(Precritical, Condition == "A")
 Precritical_A$Precritical_A_Predicted <- predict(model_Precritical, newdata = Precritical_A,  type = "response")
@@ -70,6 +85,7 @@ residuals <- rbind(residuals, new_row_residuals)
 # calculate standard error for logRT estimated
 SE_est_Precrit_A <- sd(Precritical_A$Precritical_A_Predicted, na.rm = TRUE) / sqrt(length(Precritical_A$Precritical_A_Predicted)) 
 SE_est_Precrit_A
+
 new_row_logRT_estimated <- data.frame(Region = 'Pre-critical', Condition = "A", Estimated_logRT = Precrit_A_logRT_estimated, SE_Estimated = SE_est_Precrit_A)
 logRT_estimated <- rbind(logRT_estimated, new_row_logRT_estimated)
 
@@ -142,7 +158,7 @@ Critical$inverted_scaled_Plaus_Critical <- (Critical$scaled_Plaus_Critical) * (-
 Critical$logRT_Critical <- log(Critical$ReadingTime)
 
 # define and run the linear mixed-effects regression model for the Critical region 
-model_Critical <- lmer(logRT_Critical ~ inverted_scaled_Plaus_Critical + scaled_Surprisaldist_Critical + 
+model_Critical <- lmerTest::lmer(logRT_Critical ~ inverted_scaled_Plaus_Critical + scaled_Surprisaldist_Critical + 
                             (1 + inverted_scaled_Plaus_Critical + scaled_Surprisaldist_Critical | Subject) + 
                             (1 + inverted_scaled_Plaus_Critical + scaled_Surprisaldist_Critical | Item), data = Critical)
 
@@ -242,7 +258,7 @@ Spillover$inverted_scaled_Plaus_Spillover <- (Spillover$scaled_Plaus_Spillover) 
 Spillover$logRT_Spillover <- log(Spillover$ReadingTime)
 
 # define and run the linear mixed-effects regression model for the Spillover region 
-model_Spillover <- lmer(logRT_Spillover ~ inverted_scaled_Plaus_Spillover + scaled_Surprisaldist_Spillover + 
+model_Spillover <- lmerTest::lmer(logRT_Spillover ~ inverted_scaled_Plaus_Spillover + scaled_Surprisaldist_Spillover + 
                          (1 + inverted_scaled_Plaus_Spillover + scaled_Surprisaldist_Spillover | Subject) + 
                          (1 + inverted_scaled_Plaus_Spillover + scaled_Surprisaldist_Spillover | Item), data = Spillover)
 
@@ -344,7 +360,7 @@ Postspillover$inverted_scaled_Plaus_Postspillover <- (Postspillover$scaled_Plaus
 Postspillover$logRT_Postspillover <- log(Postspillover$ReadingTime)
 
 # define and run the linear mixed-effects regression model for the Postspillover region 
-model_Postspillover <- lmer(logRT_Postspillover ~ inverted_scaled_Plaus_Postspillover + scaled_Surprisaldist_Postspillover + 
+model_Postspillover <- lmerTest::lmer(logRT_Postspillover ~ inverted_scaled_Plaus_Postspillover + scaled_Surprisaldist_Postspillover + 
                           (1 + inverted_scaled_Plaus_Postspillover + scaled_Surprisaldist_Postspillover | Subject) + 
                           (1 + inverted_scaled_Plaus_Postspillover + scaled_Surprisaldist_Postspillover | Item), data = Postspillover)
 

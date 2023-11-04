@@ -81,25 +81,23 @@ df <- remove_outliers(df)
 fwrite(df, "GP6SPR_processed.csv")
 
 ##### CHECK ACCURACIES AND READING TIMES #####
-# Check accuracies / reaction times per participant 
-
 # saved df into GP6 csv file because when reading GP6 from the scratch it cannot be processed by the following functions 
 # GP6 <- read.csv("GP6SPR_processed.csv")
 GP6 <- df
 
+# Check mean accuracies / mean reaction times PER PARTICIPANT
 ###calculate mean Reaction Time and Accuracy per subject ### just for info, is not included in thesis
-GP6_without_null_reaction_time <- GP6[!(ReactionTime %in% c(NA)),]
+# removed rows where reaction time was NA, because otherwise the lapply method includes them in the mean calculation which makes the mean lower
+GP6 <- GP6[!(ReactionTime %in% c(NA)),] #remove rows
+GP6 <- GP6[, lapply(.SD, mean, na.rm = TRUE), by=Subject, .SDcols=c("ReactionTime", "Accuracy")] #mean of accuracy and reaction time per subject
+GP6$Subject <- as.factor(GP6$Subject)
+GP6[order(GP6$ReactionTime),] #grouped  by reaction time
+GP6[order(GP6$Accuracy),] # grouped by accuracy
 
-GP6_without_null_reaction_time <- GP6_without_null_reaction_time[, lapply(.SD, mean, na.rm = TRUE), by=Subject, .SDcols=c("ReactionTime", "Accuracy")]
 
-GP6_without_null_reaction_time$Subject <- as.factor(GP6_without_null_reaction_time$Subject)
-GP6_without_null_reaction_time[order(GP6_without_null_reaction_time$ReactionTime),]
-GP6_without_null_reaction_time[order(GP6_without_null_reaction_time$Accuracy),]
-
-# calculate mean accuracy and mean reaction time of all participants
+# calculate mean accuracy and mean reaction time OF ALL PARTICIPANTS (based on rows containing reaction times and accuracy)
 mean_accuracy <- mean(GP6$Accuracy, na.rm = TRUE)
 cat("Mean Accuracy:", as.numeric(mean_accuracy))
-
 mean_RT <- mean(GP6$ReactionTime, na.rm = TRUE)
 cat("Mean Reaction Time:", as.numeric(mean_RT))
 
@@ -116,48 +114,68 @@ cat("Maximum value:", as.numeric(range_accuracy[2]), "\n")
 range_RT <- range(GP6$ReactionTime, na.rm = TRUE)
 cat("Minimum value:", as.numeric(range_RT[1]), "\n")
 cat("Maximum value:", as.numeric(range_RT[2]), "\n")
-range_condition_target <- aggregate(Rating ~ Condition, data = dt, FUN = "range")
 
 
-# calculate mean accuracies and mean reaction times per condition (of all participants)
-GP6 <- read.csv("GP6SPR_processed.csv")
-mean_accuracy_by_condition <- aggregate(Accuracy ~ Condition, data = GP6, FUN = mean)
-print(mean_accuracy_by_condition)
-mean_RT_by_condition <- aggregate(ReactionTime ~ Condition, data = GP6, FUN = mean)
-print(mean_RT_by_condition)
+# calculate mean accuracies and mean reaction times PER PARTICIPANT AND CONDITION
+#again rename df into GP6 because loading the GP6 csv file causes an error
+#GP6 <- read.csv("GP6SPR_processed.csv")
+GP6 <- df
+GP6 <- GP6[!(ReactionTime %in% c(NA)),] #remove rows containing NA for reaction time and accuracy
 
-# calculate sd of accuracies and reaction times per condition (of all participants)
-sd_accuracy_by_condition <- aggregate(Accuracy ~ Condition, data = GP6, FUN = "sd")
-print(sd_accuracy_by_condition)
-sd_RT_by_condition <- aggregate(ReactionTime ~ Condition, data = GP6, FUN = "sd")
-print(sd_RT_by_condition)
+conditions <- c("A", "B", "C") 
+for (condition in conditions) 
+{
+  GP6_per_condition <- GP6[(Condition %in% c(condition)),] #subset condition
+  GP6_per_condition <- GP6_per_condition[, lapply(.SD, mean, na.rm = TRUE), by=Subject, .SDcols=c("ReactionTime", "Accuracy")]
+  GP6_per_condition[order(GP6_per_condition$ReactionTime),] #grouped  by reaction time
+  GP6_per_condition[order(GP6_per_condition$Accuracy),] # grouped by accuracy
+  
+  #caclulate mean reaction time and accuracy per condition
+  mean_accuracy <- mean(GP6_per_condition$Accuracy, na.rm = TRUE)
+  cat("Mean Accuracy:", as.numeric(mean_accuracy), "\n")
+  mean_RT <- mean(GP6_per_condition$ReactionTime, na.rm = TRUE)
+  cat("Mean Reaction Time:", as.numeric(mean_RT), "\n")
+  
+  #calculate sd of accuracy and sd of reaction time of all participants
+  sd_accuracy <- sd(GP6_per_condition$Accuracy, na.rm = TRUE)
+  cat("SD:", as.numeric(sd_accuracy), "\n")
+  sd_RT <- sd(GP6_per_condition$ReactionTime, na.rm = TRUE)
+  cat("SD:", as.numeric(sd_RT), "\n")
+  
+  # calculate range of accuracy and range of reaction time of all participants
+  range_accuracy <- range(GP6_per_condition$Accuracy, na.rm = TRUE)
+  cat("Minimum value:", as.numeric(range_accuracy[1]), "\n")
+  cat("Maximum value:", as.numeric(range_accuracy[2]), "\n")
+  range_RT <- range(GP6_per_condition$ReactionTime, na.rm = TRUE)
+  cat("Minimum value:", as.numeric(range_RT[1]), "\n")
+  cat("Maximum value:", as.numeric(range_RT[2]), "\n")
+}
 
-# calculate range of accuracies and reaction times per condition (of all participants)
-range_accuracy_by_condition <- aggregate(Accuracy ~ Condition, data = GP6, FUN = range)
-print(range_accuracy_by_condition)
-range_RT_by_condition <- aggregate(ReactionTime ~ Condition, data = GP6, FUN = range)
-print(range_RT_by_condition)
-######
 
+# calculate MEAN PLAUSIBILITY RATINGS per condition [after removing outliers]
+GP6 <- df
 
-# calculate average plausibility ratings per condition [after removing outliers]
-GP6 <- read.csv("GP6SPR_processed.csv")
-
-averages_by_condition <- GP6 %>%
-  group_by(Condition) %>%
-  summarize(average_rating = mean(SPR_Plaus_Rating))
-
-print(averages_by_condition)
-
-# calculate correlation coefficient between SPR_Plaus_avg (avg Plausratings from SPR study) and Plaus_target_avg (avg Plausratings from Plaus study)
-correlation <- cor(GP6$SPR_Plaus_avg, GP6$Plaus_target_avg)
-cat("Correlation between SPR_Plaus_avg and Plaus_target_avg:", correlation)
+plaus_averages_by_condition <- aggregate(SPR_Plaus_avg ~ Condition, GP6, FUN = mean)
+plaus_averages_by_condition
+plaus_sd_by_condition <- aggregate(SPR_Plaus_avg ~ Condition, GP6, FUN = sd)
+plaus_sd_by_condition
+plaus_range_by_condition <- aggregate(SPR_Plaus_avg ~ Condition, GP6, FUN = range)
+plaus_range_by_condition
 
 #log transform reading times and add them as new column to GP6
 GP6$logRT <- log(GP6$ReadingTime)
-
-averages <- aggregate(logRT ~ Condition + Region, GP6, FUN = mean)
 ### Calculate average reading times per region and per condition ###
+
+avg_logRT_by_regions_and_conditions <- data.frame(
+  Region = character(0),
+  Condition = character(0),
+  MeanReadingTime = numeric(0),
+  SE_MeanReadingTime = numeric(0)
+)
+
+regions <- c("Pre-critical", "Critical", "Spillover", "Post-spillover") 
+conditions <- c("A", "B", "C") 
+
 averages <- GP6 %>%
   group_by(Region, Condition) %>%
   summarise(
@@ -166,13 +184,10 @@ averages <- GP6 %>%
 # Print the resulting averages
 print(averages)
 
-
-
 # Exclude Pre-critical_2
 averages <- averages %>% 
   filter(Region != "Pre-critical_2")
 print(averages)
-
 
 # Create a line plot with average log-transformed reading times
 p <- ggplot(averages, aes(x = factor(Region, levels = c("Pre-critical", "Critical", "Spillover", "Post-spillover")), 
@@ -184,7 +199,7 @@ p <- p + labs(x="Region", y="logRT", title = "Observed RTs")
 p 
 ggsave("Observed_RTs_Plot.pdf", p, width=4, height=4)
 
-
+# CALCULARE CORRELATIONS
 # correlation avg Plaus per item and condition & suprisal from Plaus study
 GP6 <- read.csv("GP6SPR.csv")  #use unprocessed file bc in prestudies no outliers based on RTs were removed yet
 correlation_matrix <- cor(GP6[, c("Plaus_target_avg", "Plaus_dist_avg", "Surprisal_target", "Surprisal_distractor")])
@@ -194,6 +209,10 @@ correlation_matrix
 # no plausibility distractor column, bc no distractor values were calculated for plausibility in the SPR study
 correlation_matrix <- cor(GP6[, c("SPR_Plaus_Rating", "Surprisal_target", "Surprisal_distractor")])
 correlation_matrix
+
+# calculate correlation coefficient between SPR_Plaus_avg (avg Plausratings from SPR study) and Plaus_target_avg (avg Plausratings from Plaus study)
+correlation <- cor(GP6$SPR_Plaus_avg, GP6$Plaus_target_avg)
+cat("Correlation between SPR_Plaus_avg and Plaus_target_avg:", correlation)
 
 
 ########## READ PROCESSED DATA

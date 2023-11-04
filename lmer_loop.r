@@ -1,6 +1,7 @@
 ### LMER ###
 # load lme4 package
 library(lme4)
+library(lmerTest)
 library(dplyr)
 library(ggplot2)
 
@@ -21,6 +22,19 @@ logRT_estimated <- data.frame(
   SE_Estimated = numeric(0)
 )
 
+p_values <- data.frame(
+  Region = character(0),
+  p_value_plausibility_target = numeric(0),
+  p_value_surprisal_distractor = numeric(0)
+)
+
+SPR_coefficients <- data.frame(
+  Region = character(0),
+  Estimate = character(0),
+  Estimate_value = numeric(0),
+  Estimate_error = numeric(0)
+)
+
 regions <- c("Pre-critical", "Critical", "Spillover", "Post-spillover") 
 conditions <- c("A", "B", "C") 
 
@@ -39,14 +53,37 @@ for (region in regions)
   
   
   # define and run the linear mixed-effects regression model for the precritical region 
-  model_per_region <- lmer(logRT_per_region ~ inverted_scaled_Plaus_per_region + scaled_Surprisaldist_per_region + 
+  model_per_region <- lmerTest::lmer(logRT_per_region ~ inverted_scaled_Plaus_per_region + scaled_Surprisaldist_per_region + 
                               (1 + inverted_scaled_Plaus_per_region + scaled_Surprisaldist_per_region | Subject) + 
                               (1 + inverted_scaled_Plaus_per_region + scaled_Surprisaldist_per_region | Item), data = region_subset)
   
   # print the summary of the model
   summary_per_region <- summary(model_per_region)
-  summary_per_region
-
+  print(summary_per_region)
+  
+  # calculate p-values
+  p_values_per_region <- summary_per_region$coefficients[, "Pr(>|t|)"]
+  new_row_p_value <- data.frame(Region = region, 
+                                p_value_plausibility_target = p_values_per_region[2], 
+                                p_value_surprisal_distractor = p_values_per_region[3])
+  p_values <- rbind(p_values, new_row_p_value)
+  
+  # extract intercept and coefficients added to intercept
+  coefficients_per_region <- summary_per_region$coefficients
+  intercept <- coefficients_per_region["(Intercept)", 1]
+  plaus_target_coeff <- coefficients_per_region["(Intercept)", 1] + coefficients_per_region["inverted_scaled_Plaus_per_region", 1]
+  surprisal_distractor_coeff <- coefficients_per_region["(Intercept)", 1] + coefficients_per_region["scaled_Surprisaldist_per_region", 1]
+  
+  # add error bars for coefficients and intercept
+  new_row_coefficient <- data.frame(Region = region, Estimate = "Intercept", Estimate_value = intercept, Estimate_error = coefficients_per_region["(Intercept)", 2])
+  SPR_coefficients <- rbind(SPR_coefficients, new_row_coefficient)
+  
+  new_row_coefficient <- data.frame(Region = region, Estimate = "Plausability", Estimate_value = plaus_target_coeff, Estimate_error = coefficients_per_region["inverted_scaled_Plaus_per_region", 2])
+  SPR_coefficients <- rbind(SPR_coefficients, new_row_coefficient)
+  
+  new_row_coefficient <- data.frame(Region = region, Estimate = "Surprizal", Estimate_value = surprisal_distractor_coeff, Estimate_error = coefficients_per_region["scaled_Surprisaldist_per_region", 2])
+  SPR_coefficients <- rbind(SPR_coefficients, new_row_coefficient)
+  
   for (condition in conditions)
   {
     #####predict condition A, precritical#####
@@ -97,7 +134,7 @@ ggsave("Residuals_Plot.pdf", p, width=4, height=4)
 # plot estimated logRTs
 # Create a line plot 
 p <- ggplot(logRT_estimated, aes(x = factor(Region, levels = c("Pre-critical", "Critical", "Spillover", "Post-spillover")), 
-                                 y = Estimated_logRT, color = Condition, group = Condition)) + geom_point(shape = 4, size = 3.5, stroke = 0.4) + geom_line(linewidth=0.5) + ylim (5.5, 5.8)
+                                 y = Estimated_logRT, color = Condition, group = Condition)) + geom_point(shape = 4, size = 3.5, stroke = 0.4) + geom_line(linewidth=0.5) + ylim (5.5, 5.7)
 p <- p + theme_minimal() + geom_errorbar(aes(ymin=Estimated_logRT-SE_Estimated, ymax=Estimated_logRT+SE_Estimated), width=.1, size=0.3) 
 p <- p + scale_color_manual(name="Condition", labels=c("A: Plausible", "B: Medium Plausible", "C: Implausible"), values=c("#000000", "#FF0000", "#0000FF"))
 p <- p + labs(x="Region", y="logRT", title = "Estimated RTs") 
@@ -105,4 +142,12 @@ p <- p + theme(legend.position="bottom", legend.text=element_text(size=7), legen
 p 
 ggsave("Estimated_RTs_Plot.pdf", p, width=4, height=4)
 
-
+# plot intercept and coefficients added to intercept
+p <- ggplot(SPR_coefficients, aes(x = factor(Region, levels = c("Pre-critical", "Critical", "Spillover", "Post-spillover")), 
+                                 y = Estimate_value, color = Estimate, group = Estimate)) + geom_point(shape = 4, size = 3.5, stroke = 0.4) + geom_line(linewidth=0.5) + ylim (5.5, 5.7)
+p <- p + theme_minimal() + geom_errorbar(aes(ymin=Estimate_value-Estimate_error, ymax=Estimate_value+Estimate_error), width=.1, size=0.3) 
+p <- p + scale_color_manual(name="Coefficients", labels=c("Intercept", "Plausibility", "Surprisal"), values=c("#000000", "#FF00FF", "#00FFFF"))
+p <- p + labs(x="Region", y="SPR Coefficients", title = "Coefficients") 
+p <- p + theme(legend.position="bottom", legend.text=element_text(size=7), legend.title=element_text(size=7), axis.title.x = element_text(size = 14), axis.title.y = element_text(size = 14)) 
+p 
+ggsave("Intercept_Coefficients_Plot.pdf", p, width=4, height=4)
