@@ -59,9 +59,7 @@ coefficients_Precritical <- summary_Precritical$coefficients
 intercept <- coefficients_Precritical["(Intercept)", 1]
 plaus_target_coeff <- coefficients_Precritical["(Intercept)", 1] + coefficients_Precritical["inverted_scaled_Plaus_Precritical", 1]
 surprisal_distractor_coeff <- coefficients_Precritical["(Intercept)", 1] + coefficients_Precritical["scaled_Surprisaldist_Precritical", 1]
-fixed_effect_coeff
-inverted_effect_coeff
-scaled_effect_coeff
+
 #####predict condition A, precritical#####
 Precritical_A <- subset(Precritical, Condition == "A")
 Precritical_A$Precritical_A_Predicted <- predict(model_Precritical, newdata = Precritical_A,  type = "response")
@@ -88,6 +86,7 @@ SE_est_Precrit_A
 
 new_row_logRT_estimated <- data.frame(Region = 'Pre-critical', Condition = "A", Estimated_logRT = Precrit_A_logRT_estimated, SE_Estimated = SE_est_Precrit_A)
 logRT_estimated <- rbind(logRT_estimated, new_row_logRT_estimated)
+
 
 
 
