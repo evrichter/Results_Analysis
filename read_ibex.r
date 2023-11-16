@@ -8,7 +8,7 @@ library(data.table)
 library(gridExtra)
 library(dplyr)
 
-setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results/")
+setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results_SPR_Plaus_single/")
 source("ibex_fns.r")
 
 

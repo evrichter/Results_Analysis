@@ -5,7 +5,7 @@ library(lmerTest)
 library(dplyr)
 library(ggplot2)
 
-setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results_SPR_Plaus_Ratings/")
+setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results_SPR_Plaus_single/")
 GP6 <- read.csv("GP6SPR_processed.csv")
 
 residuals <- data.frame(
@@ -25,7 +25,8 @@ logRT_estimated <- data.frame(
 p_values <- data.frame(
   Region = character(0),
   p_value_plausibility_target = numeric(0),
-  p_value_surprisal_distractor = numeric(0)
+  p_value_surprisal_distractor = numeric(0),
+  p_value_precrit = numeric(0)
 )
 
 SPR_coefficients <- data.frame(
@@ -56,7 +57,7 @@ for (region in regions)
   
   
   # define and run the linear mixed-effects regression model for the precritical region 
-  model_per_region <- lmer(logRT_per_region ~ inverted_scaled_Plaus_per_region + scaled_Surprisaldist_per_region + scaled_precrit_RT_per_region +
+  model_per_region <-  lmerTest::lmer(logRT_per_region ~ inverted_scaled_Plaus_per_region + scaled_Surprisaldist_per_region + scaled_precrit_RT_per_region +
                                        (1 + inverted_scaled_Plaus_per_region + scaled_Surprisaldist_per_region + scaled_precrit_RT_per_region | Subject) + 
                                        (1 + inverted_scaled_Plaus_per_region + scaled_Surprisaldist_per_region + scaled_precrit_RT_per_region | Item), data = region_subset)
   
@@ -68,7 +69,8 @@ for (region in regions)
   p_values_per_region <- summary_per_region$coefficients[, "Pr(>|t|)"]
   new_row_p_value <- data.frame(Region = region, 
                                 p_value_plausibility_target = p_values_per_region[2], 
-                                p_value_surprisal_distractor = p_values_per_region[3])
+                                p_value_surprisal_distractor = p_values_per_region[3],
+                                p_value_precrit = p_values_per_region[4])
   p_values <- rbind(p_values, new_row_p_value)
   
   # extract intercept and coefficients added to intercept
