@@ -8,7 +8,7 @@ library(data.table)
 library(gridExtra)
 library(dplyr)
 
-setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results_SPR_Plaus_single/")
+setwd("~/Downloads/Master_Thesis/Plausibility_Rating_Experiments/3_SPR_Study/Results_SPR_Plaus_single/")
 source("ibex_fns.r")
 
 
@@ -84,6 +84,19 @@ fwrite(df, "GP6SPR_processed.csv")
 # saved df into GP6 csv file because when reading GP6 from the scratch it cannot be processed by the following functions 
 # GP6 <- read.csv("GP6SPR_processed.csv")
 GP6 <- df
+
+
+condition_A <- GP6$Condition == "A" & (GP6$SPR_Plaus_Rating == 6 | GP6$SPR_Plaus_Rating == 7)
+condition_B <- GP6$Condition == "B" & (GP6$SPR_Plaus_Rating == 3 | GP6$SPR_Plaus_Rating == 4 | GP6$SPR_Plaus_Rating == 5)
+condition_C <- GP6$Condition == "C" & (GP6$SPR_Plaus_Rating == 1 | GP6$SPR_Plaus_Rating == 2)
+
+
+# should only remove ratings for values in SPR_Plaus_Rating column for some participants and not
+# the values of other columns for the same rows as well 
+GP6$SPR_Plaus_Rating[!(condition_A | condition_B | condition_C)] <- NA
+
+fwrite(GP6, "GP6_filtered.csv")
+
 
 # Check mean accuracies / mean reaction times PER PARTICIPANT
 ###calculate mean Reaction Time and Accuracy per subject ### just for info, is not included in thesis
@@ -241,7 +254,7 @@ cat("Correlation between SPR_Plaus_avg and Plaus_target_avg:", correlation)
 # Data Viz for avg Plausratings from SPR Study
 library(ggplot2)
 
-setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results/")
+setwd("~/Downloads/Master_Thesis/Plausibility_Rating_Experiments/3_SPR_Study/Results_SPR_Plaus_single/")
 dt <- fread("GP6SPR_processed.csv") #plots plausratings after removing outliers
 
 

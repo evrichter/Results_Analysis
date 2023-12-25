@@ -5,8 +5,8 @@ library(lmerTest)
 library(dplyr)
 library(ggplot2)
 
-setwd("~/Downloads/Master_Thesis/3_SPR_Study/Results_SPR_Plaus_single/")
-GP6 <- read.csv("GP6SPR_processed.csv")
+setwd("~/Downloads/Master_Thesis/Plausibility_Rating_Experiments/3_SPR_Study/Results_SPR_Plaus_single/")
+GP6 <- read.csv("GP6_filtered.csv")
 
 residuals <- data.frame(
   Region = character(0),
@@ -105,7 +105,7 @@ for (region in regions)
     region_per_condition$region_per_condition_Predicted <- predict(model_per_region, newdata = region_per_condition,  type = "response")
     
     # calculate residuals
-    Residual_region_per_condition <- mean(region_per_condition$logRT_per_region) - mean(region_per_condition$region_per_condition_Predicted)
+    Residual_region_per_condition <- mean(region_per_condition$logRT_per_region) - mean(region_per_condition$region_per_condition_Predicted, na.rm = TRUE)
     Residual_region_per_condition
     # observed RT for condition A precritical
     region_per_condition_logRT_observed <- mean(region_per_condition$logRT_per_region)
@@ -114,7 +114,7 @@ for (region in regions)
    #  print(region_per_condition_logRT_observed)
    # }
     # estimated RT for condition A precritical
-    region_per_condition_logRT_estimated <- mean(region_per_condition$region_per_condition_Predicted)
+    region_per_condition_logRT_estimated <- mean(region_per_condition$region_per_condition_Predicted, na.rm = TRUE)
     region_per_condition_logRT_estimated
     
     # calculate standard error for residuals
